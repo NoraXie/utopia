@@ -1,9 +1,6 @@
 ## 概况
 
-* utils: 常用方法函数包, 支持Python2
 * utils3: 常用方法函数包, 支持Python3
-* doc: documentation相关的文件
-* requirements.txt: 使用见[安装和使用], 包含所有Python2所需包以及版本
 * requirements3.txt: 使用见[安装和使用], 包含所有Python3所需包以及版本
 
 
@@ -34,42 +31,26 @@
     Use CapWords for class names, but `lower_with_under.py` for module names. Although there are many existing modules named CapWords.py, this is now discouraged because it's confusing when the module happens to be named after a class. ("wait -- did I write import StringIO or from StringIO import StringIO?")
 
 
-    Guidelines derived from Guido's Recommendations
+Guidelines derived from Guido's Recommendations
 
-    |Type | Public | Internal |
-    |----+----+----|
-    |Packages |`lower_with_under` | |
-    |Modules |`lower_with_under` | `_lower_with_under` |
-    |Classes	| `CapWords` | `_CapWords`|
-    |Exceptions | `CapWords` | |
-    |Functions | `lower_with_under()` | `_lower_with_under()` |
-    |Global/Class Constants | `CAPS_WITH_UNDER` | `_CAPS_WITH_UNDER` |
-    |Global/Class Variables | `lower_with_under` | `_lower_with_under` |
-    |Instance Variables | `lower_with_under`	 | `_lower_with_under` (protected) or `__lower_with_under` (private)
-    |Method Names | `lower_with_under()` | `_lower_with_under()` (protected) or `__lower_with_under()` (private)
-    |Function/Method Parameters | `lower_with_under` | |
-    |Local Variables | `lower_with_under` | |
+|Type | Public | Internal |
+|----|----+----|
+|Packages |`lower_with_under` | |
+|Modules |`lower_with_under` | `_lower_with_under` |
+|Classes	| `CapWords` | `_CapWords`|
+|Exceptions | `CapWords` | |
+|Functions | `lower_with_under()` | `_lower_with_under()` |
+|Global/Class Constants | `CAPS_WITH_UNDER` | `_CAPS_WITH_UNDER` |
+|Global/Class Variables | `lower_with_under` | `_lower_with_under` |
+|Instance Variables | `lower_with_under`	 | `_lower_with_under` (protected) or `__lower_with_under` (private)
+|Method Names | `lower_with_under()` | `_lower_with_under()` (protected) or `__lower_with_under()` (private)
+|Function/Method Parameters | `lower_with_under` | |
+|Local Variables | `lower_with_under` | |
 
 ## 安装和使用
-* 建议安装virtual environment
-
-```
-Virtualenv
-
-https://virtualenv.pypa.io/en/stable/installation/
-
-make a virtual environment named ENV
-$ virtualenv ENV
-
-activate the ENV
-$ source /Users/huxiangyu/ENV/bin/activate
-
-deactivate the ENV
-$ deactivate
-```
 
 * 安装依赖包
-`pip install -r requirements.txt`
+`pip install -r requirements3.txt`
 
 * 使用
 Linux 系统是~/.bashrc, Mac OS系统是 ~/.bash_profile, 在这个文件里面加入
@@ -81,24 +62,7 @@ Linux 系统是~/.bashrc, Mac OS系统是 ~/.bash_profile, 在这个文件里面
 `source ~/.bash_profile`
 之后既可以正常import这个包里面的函数了
 
-使用Python2时可以参照：
-```
-from utils.data_io_utils import *
-```
-
 使用Python3时可以参照：
 ```
 from utils3.data_io_utils import *
-```
-
-* 连接presto的credentials
-
-在`utils/`下建立一个文件叫`mysql.cfg`,这里面的内容如以下格式, 这个文件不会被commit到gitlab上，只存在于你本地的文件中，便于保护个人密码
-
-```
-[presto]
-PRESTO_HOST = 172.19.2.30
-PRESTO_PORT = 10003
-PRESTO_USER = replace_to_your_user_name
-PRESTO_PASSWORD = replace_to_your_password
 ```
