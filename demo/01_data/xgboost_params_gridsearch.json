@@ -1,0 +1,13 @@
+{
+	"gamma": 0,
+	"max_depth": 2,
+	"min_child_weight": 1,
+	"objective": "binary:logistic",
+	"silent": 0,
+	"nthread": 4,
+	"eval_metric": "auc",
+	"subsample": 0.8,
+	"colsample_bytree": 0.8,
+	"eta": 0.03,
+	"num_boost_round": 38
+}

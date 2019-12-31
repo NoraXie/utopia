@@ -1,0 +1,85 @@
+{% extends "base.html" %}
+
+
+{% block css_imports %}
+<link href="../static/product/dashboard_style.css" rel="stylesheet">
+<script type="text/javascript" src="http://echarts.baidu.com/dist/echarts.js"></script>
+        <!-- 引入jquery.js -->
+<script type="text/javascript" src="http://cdn.static.runoob.com/libs/jquery/1.10.2/jquery.min.js"></script>
+{% endblock %}
+
+{% block page_content %}
+  <div class="container-fluid">
+    <div class="row">
+      <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+        <div class="sidebar-sticky">
+          <ul class="nav flex-column">
+            <br>
+            <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+              <span>模型稳定性与有效性</span>
+              <a class="d-flex align-items-center text-muted" href="#">
+                <span data-feather="plus-circle"></span>
+              </a>
+            </h6>
+            <li class="nav-item">
+              {% if monitor_var=='PSI' %}
+                <a class="nav-link active" href="{{ url_for('psi') }}">
+              {% else %}
+                <a class="nav-link" href="{{ url_for('psi') }}">
+              {% endif %}
+                <span data-feather="list"></span>
+                模型稳定性PSI <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              {% if monitor_var=='KS' %}
+                <a class="nav-link active" href="{{ url_for('ks') }}">
+              {% else %}
+                <a class="nav-link" href="{{ url_for('ks') }}">
+              {% endif %}
+                <span data-feather="bar-chart-2"></span>
+                模型有效性KS
+              </a>
+            </li>
+          </ul>
+
+          <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+            <span>监控汇总</span>
+            <a class="d-flex align-items-center text-muted" href="#">
+              <span data-feather="plus-circle"></span>
+            </a>
+          </h6>
+          <ul class="nav flex-column mb-2">
+            <li class="nav-item">
+              {% if monitor_var=='summary' %}
+                <a class="nav-link active" href="{{ url_for('monitor_summary' ) }}">
+              {% else %}
+                <a class="nav-link" href="{{ url_for('monitor_summary') }}">
+              {% endif %}
+                <span data-feather="file-text"></span>
+                模型监控汇总
+              </a>
+            </li>
+            <li class="nav-item">
+              {% if monitor_var=='edit' %}
+                <a class="nav-link active" href="{{ url_for('edit') }}">
+              {% else %}
+                <a class="nav-link" href="{{ url_for('edit') }}">
+              {% endif %}
+                <span data-feather="file-text"></span>
+                撰写监控总结
+              </a>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+  {% block page_main %}
+  {% endblock %}
+  <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+  <script>
+    feather.replace()
+  </script>
+  {% block script_foot %}
+  {% endblock %}
+{% endblock %}

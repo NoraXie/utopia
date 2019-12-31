@@ -1,0 +1,640 @@
+booster[0]:
+0:[xy_behaviorFailPayNumHist<10.5] yes=1,no=2,missing=1
+	1:[overdue_amount_max<2981] yes=3,no=4,missing=3
+		3:leaf=-0.182913572
+		4:leaf=-0
+	2:[hds_var36<0.548583984] yes=5,no=6,missing=5
+		5:leaf=-0
+		6:leaf=-0.138461545
+booster[1]:
+0:[overdue_days_max<16.5] yes=1,no=2,missing=1
+	1:[xy_behaviorFailPayNumHist<13.5] yes=3,no=4,missing=3
+		3:leaf=-0.166064993
+		4:leaf=-0.069423452
+	2:[plan_prob<77] yes=5,no=6,missing=5
+		5:leaf=0.0304416697
+		6:leaf=-0.101446271
+booster[2]:
+0:[ymJqhScore<647.5] yes=1,no=2,missing=1
+	1:[overdue_days_max<4.5] yes=3,no=4,missing=3
+		3:leaf=-0.132495329
+		4:leaf=-0.0160971824
+	2:[overdue_days_max<9.5] yes=5,no=6,missing=5
+		5:leaf=-0.160473436
+		6:leaf=-0.0857459903
+booster[3]:
+0:[ymJqhScore<662.5] yes=1,no=2,missing=1
+	1:[apollo_osBalanceXJAll<-4443.5] yes=3,no=4,missing=3
+		3:leaf=-0.109474294
+		4:leaf=-0.133827984
+	2:[gd_NIKEAScore1500<456.5] yes=5,no=6,missing=5
+		5:leaf=-0.0719473958
+		6:leaf=-0.150477991
+booster[4]:
+0:[ymJqhScore<662.5] yes=1,no=2,missing=1
+	1:[overdue_amount_max<46.375] yes=3,no=4,missing=3
+		3:leaf=-0.115874864
+		4:leaf=-0.0502859056
+	2:[overdue_days_max<9.5] yes=5,no=6,missing=5
+		5:leaf=-0.141847283
+		6:leaf=-0.0463595167
+booster[5]:
+0:[ymJqhScore<623.5] yes=1,no=2,missing=1
+	1:[overdue_days_max<0.5] yes=3,no=4,missing=3
+		3:leaf=-0.10195408
+		4:leaf=-0.0028975585
+	2:[ymJqhScore<734.5] yes=5,no=6,missing=5
+		5:leaf=-0.125874192
+		6:leaf=-0.139546573
+booster[6]:
+0:[xy_behaviorFailPayNumHist<7.5] yes=1,no=2,missing=1
+	1:[overdue_amount_max<12.8789062] yes=3,no=4,missing=3
+		3:leaf=-0.121016644
+		4:leaf=-0.0930481702
+	2:[xy_behaviorLoanDur<223] yes=5,no=6,missing=5
+		5:leaf=0.0231126975
+		6:leaf=-0.08955466
+booster[7]:
+0:[overdue_days_max<4.5] yes=1,no=2,missing=1
+	1:[hds_var24<2.5] yes=3,no=4,missing=3
+		3:leaf=-0.10233207
+		4:leaf=-0.118350342
+	2:[hds_var22<1.5] yes=5,no=6,missing=5
+		5:leaf=-0.0720162094
+		6:leaf=0.108959369
+booster[8]:
+0:[ymJqhScore<647.5] yes=1,no=2,missing=1
+	1:[xy_behaviorFailPayNumHist<7.5] yes=3,no=4,missing=3
+		3:leaf=-0.0832256451
+		4:leaf=0.0413373895
+	2:[ymJqhScore<734.5] yes=5,no=6,missing=5
+		5:leaf=-0.112241589
+		6:leaf=-0.125281438
+booster[9]:
+0:[hds_var22<-4444] yes=1,no=2,missing=1
+	1:[overdue_amount_max<503.25] yes=3,no=4,missing=3
+		3:leaf=-0.0804117694
+		4:leaf=0.0540449619
+	2:[xy_behaviorFailPayNumHist<6.5] yes=5,no=6,missing=5
+		5:leaf=-0.107809268
+		6:leaf=-0.0421480685
+booster[10]:
+0:[ymJqhScore<647.5] yes=1,no=2,missing=1
+	1:[plan_prob<66.5] yes=3,no=4,missing=3
+		3:leaf=-0.0373399369
+		4:leaf=-0.08274775
+	2:[overdue_days_max<9.5] yes=5,no=6,missing=5
+		5:leaf=-0.109401383
+		6:leaf=-0.0244338866
+booster[11]:
+0:[ymJqhScore<662.5] yes=1,no=2,missing=1
+	1:[xy_behaviorFailPayNumHist<4.5] yes=3,no=4,missing=3
+		3:leaf=-0.0732799247
+		4:leaf=0.0456096344
+	2:[xy_behaviorFailPayNumHist<6.5] yes=5,no=6,missing=5
+		5:leaf=-0.107545607
+		6:leaf=-0.0288155563
+booster[12]:
+0:[ymJqhScore<629.5] yes=1,no=2,missing=1
+	1:[ymJqhScore<-4234.5] yes=3,no=4,missing=3
+		3:leaf=-0.0818959996
+		4:leaf=-0.0368057005
+	2:[ymJqhScore<734.5] yes=5,no=6,missing=5
+		5:leaf=-0.0944064036
+		6:leaf=-0.111520484
+booster[13]:
+0:[ymJqhScore<648.5] yes=1,no=2,missing=1
+	1:[overdue_days_max<0.5] yes=3,no=4,missing=3
+		3:leaf=-0.0640200749
+		4:leaf=0.0117981182
+	2:[ymJqhScore<689.5] yes=5,no=6,missing=5
+		5:leaf=-0.0854201466
+		6:leaf=-0.102337457
+booster[14]:
+0:[ymJqhScore<662.5] yes=1,no=2,missing=1
+	1:[xy_applyLoanQueryNumL1M<2.5] yes=3,no=4,missing=3
+		3:leaf=-0.0618073642
+		4:leaf=0.126251191
+	2:[ymJqhScore<734.5] yes=5,no=6,missing=5
+		5:leaf=-0.0900638476
+		6:leaf=-0.108865552
+booster[15]:
+0:[ymJqhScore<662.5] yes=1,no=2,missing=1
+	1:[hds_var36<0.965820312] yes=3,no=4,missing=3
+		3:leaf=-0.0465778671
+		4:leaf=-0.0979697928
+	2:[ymJqhScore<725.5] yes=5,no=6,missing=5
+		5:leaf=-0.0863608941
+		6:leaf=-0.10510397
+booster[16]:
+0:[ymJqhScore<647.5] yes=1,no=2,missing=1
+	1:[plan_prob<66.5] yes=3,no=4,missing=3
+		3:leaf=-0.0166511498
+		4:leaf=-0.06186058
+	2:[overdue_days_max<11.5] yes=5,no=6,missing=5
+		5:leaf=-0.0895011351
+		6:leaf=0.0149498051
+booster[17]:
+0:[ymJqhScore<624.5] yes=1,no=2,missing=1
+	1:[ymJqhScore<-4234.5] yes=3,no=4,missing=3
+		3:leaf=-0.068567358
+		4:leaf=-0.0144916521
+	2:[shCISCreditLine<99061.5] yes=5,no=6,missing=5
+		5:leaf=-0.0850201398
+		6:leaf=0.044333782
+booster[18]:
+0:[ymJqhScore<623.5] yes=1,no=2,missing=1
+	1:[hds_var75<2.5] yes=3,no=4,missing=3
+		3:leaf=-0.0213520117
+		4:leaf=-0.0827620029
+	2:[ymJqhScore<734.5] yes=5,no=6,missing=5
+		5:leaf=-0.073768653
+		6:leaf=-0.0979261547
+booster[19]:
+0:[overdue_days_max<4.5] yes=1,no=2,missing=1
+	1:[hds_var75<4.5] yes=3,no=4,missing=3
+		3:leaf=-0.0610207431
+		4:leaf=-0.0896772146
+	2:[education_college<0.774169922] yes=5,no=6,missing=5
+		5:leaf=-0.00326591334
+		6:leaf=0.130816177
+booster[20]:
+0:[hds_var24<29.5] yes=1,no=2,missing=1
+	1:[overdue_amount_max<45.765625] yes=3,no=4,missing=3
+		3:leaf=-0.0581240021
+		4:leaf=0.00545746414
+	2:[hds_var120<1.5] yes=5,no=6,missing=5
+		5:leaf=0.0777007863
+		6:leaf=-0.0937366113
+booster[21]:
+0:[gd_NIKEAScore1500<583.5] yes=1,no=2,missing=1
+	1:[hds_var24<-4444] yes=3,no=4,missing=3
+		3:leaf=-0.00815008394
+		4:leaf=-0.0538918264
+	2:[overdue_days_max<10.5] yes=5,no=6,missing=5
+		5:leaf=-0.0793813467
+		6:leaf=0.110629432
+booster[22]:
+0:[hds_var24<-4444] yes=1,no=2,missing=1
+	1:[plan_prob<61.5] yes=3,no=4,missing=3
+		3:leaf=0.0357683636
+		4:leaf=-0.0472715348
+	2:[hds_var32<520.049988] yes=5,no=6,missing=5
+		5:leaf=-0.0585101731
+		6:leaf=-0.0852625072
+booster[23]:
+0:[ymJqhScore<677.5] yes=1,no=2,missing=1
+	1:[overdue_amount_max<46.375] yes=3,no=4,missing=3
+		3:leaf=-0.0326338224
+		4:leaf=0.0518263765
+	2:[gd_NIKEAScore1500<456.5] yes=5,no=6,missing=5
+		5:leaf=0.0949920714
+		6:leaf=-0.0799287856
+booster[24]:
+0:[ymJqhScore<648.5] yes=1,no=2,missing=1
+	1:[plan_prob<60.5] yes=3,no=4,missing=3
+		3:leaf=0.04189739
+		4:leaf=-0.0219454598
+	2:[ymJqhScore<734.5] yes=5,no=6,missing=5
+		5:leaf=-0.0570253618
+		6:leaf=-0.0873441324
+booster[25]:
+0:[ymJqhScore<653.5] yes=1,no=2,missing=1
+	1:[hds_var36<0.912597656] yes=3,no=4,missing=3
+		3:leaf=-0.00247547147
+		4:leaf=-0.0784318224
+	2:[age<42.5] yes=5,no=6,missing=5
+		5:leaf=-0.0716092065
+		6:leaf=-0.027201673
+booster[26]:
+0:[ymJqhScore<648.5] yes=1,no=2,missing=1
+	1:[ymJqhScore<-4229] yes=3,no=4,missing=3
+		3:leaf=-0.0504142046
+		4:leaf=0.0107001411
+	2:[age<42.5] yes=5,no=6,missing=5
+		5:leaf=-0.0696729943
+		6:leaf=-0.0216951054
+booster[27]:
+0:[education_college<0.598876953] yes=1,no=2,missing=1
+	1:[hds_var75<5.5] yes=3,no=4,missing=3
+		3:leaf=-0.0095223831
+		4:leaf=-0.0911783502
+	2:[apollo_osBalanceXJAll<-4443.5] yes=5,no=6,missing=5
+		5:leaf=-0.0275009479
+		6:leaf=-0.0710171983
+booster[28]:
+0:[ymJqhScore<662.5] yes=1,no=2,missing=1
+	1:[hds_var36<0.918701172] yes=3,no=4,missing=3
+		3:leaf=0.00279381755
+		4:leaf=-0.0609936491
+	2:[overdue_days_max<11.5] yes=5,no=6,missing=5
+		5:leaf=-0.0634238273
+		6:leaf=0.0700138435
+booster[29]:
+0:[ymJqhScore<662.5] yes=1,no=2,missing=1
+	1:[xy_behaviorFailPayNumHist<4.5] yes=3,no=4,missing=3
+		3:leaf=-0.0223658383
+		4:leaf=0.126148656
+	2:[overdue_days_max<3.5] yes=5,no=6,missing=5
+		5:leaf=-0.062908724
+		6:leaf=0.0510622226
+booster[30]:
+0:[ymJqhScore<734.5] yes=1,no=2,missing=1
+	1:[xy_behaviorFailPayNumHist<4.5] yes=3,no=4,missing=3
+		3:leaf=-0.0254682582
+		4:leaf=0.0794399828
+	2:[xy_behaviorLoanDur<329.5] yes=5,no=6,missing=5
+		5:leaf=-0.0844239816
+		6:leaf=0.0136429686
+booster[31]:
+0:[ymJqhScore<662.5] yes=1,no=2,missing=1
+	1:[hds_var36<1.07226562] yes=3,no=4,missing=3
+		3:leaf=0.00567721575
+		4:leaf=-0.0797917917
+	2:[hds_var37<690.5] yes=5,no=6,missing=5
+		5:leaf=-0.0644007772
+		6:leaf=-0.0146975964
+booster[32]:
+0:[ymJqhScore<689.5] yes=1,no=2,missing=1
+	1:[hds_var113<219.690002] yes=3,no=4,missing=3
+		3:leaf=0.000487204466
+		4:leaf=-0.052421201
+	2:[age<43.5] yes=5,no=6,missing=5
+		5:leaf=-0.0624437705
+		6:leaf=0.00566955283
+booster[33]:
+0:[ymJqhScore<689.5] yes=1,no=2,missing=1
+	1:[xy_behaviorFailPayNumHist<0.5] yes=3,no=4,missing=3
+		3:leaf=-0.0231698491
+		4:leaf=0.0437553748
+	2:[hds_var113<19.9500008] yes=5,no=6,missing=5
+		5:leaf=-0.0277272668
+		6:leaf=-0.0670196861
+booster[34]:
+0:[ymJqhScore<734.5] yes=1,no=2,missing=1
+	1:[overdue_amount_max<12.8789062] yes=3,no=4,missing=3
+		3:leaf=-0.0237880722
+		4:leaf=0.054096844
+	2:[education_college<0.759033203] yes=5,no=6,missing=5
+		5:leaf=-0.0838792175
+		6:leaf=-0.0243520495
+booster[35]:
+0:[ymJqhScore<734.5] yes=1,no=2,missing=1
+	1:[ymJqhScore<732.5] yes=3,no=4,missing=3
+		3:leaf=-0.0131318066
+		4:leaf=0.150035426
+	2:[plan_prob<37] yes=5,no=6,missing=5
+		5:leaf=0.0433146693
+		6:leaf=-0.0766130686
+booster[36]:
+0:[ymJqhScore<653.5] yes=1,no=2,missing=1
+	1:[plan_prob<80.5] yes=3,no=4,missing=3
+		3:leaf=0.0277221799
+		4:leaf=-0.0420653261
+	2:[gd_NIKEAScore1500<610.5] yes=5,no=6,missing=5
+		5:leaf=-0.0263639297
+		6:leaf=-0.0683176219
+booster[37]:
+0:[hds_var24<34.5] yes=1,no=2,missing=1
+	1:[consumer_stability<88.46875] yes=3,no=4,missing=3
+		3:leaf=0.00476009212
+		4:leaf=-0.0346691571
+	2:[consumer_stability<87.65625] yes=5,no=6,missing=5
+		5:leaf=-0.0902484581
+		6:leaf=-0.0294596162
+booster[38]:
+0:[rm_zx_unsec_os_amt<8987.5] yes=1,no=2,missing=1
+	1:[xy_behaviorFailPayNumHist<1.5] yes=3,no=4,missing=3
+		3:leaf=-0.0146482904
+		4:leaf=0.0871918648
+	2:[hds_var122<-0.8828125] yes=5,no=6,missing=5
+		5:leaf=-0.0422910117
+		6:leaf=-0.0940961465
+booster[39]:
+0:[gd_NIKEAScore1500<620.5] yes=1,no=2,missing=1
+	1:[apollo_osBalanceXJAll<-4443.5] yes=3,no=4,missing=3
+		3:leaf=0.0173378941
+		4:leaf=-0.0252029095
+	2:[education_graduateschool<0.223022461] yes=5,no=6,missing=5
+		5:leaf=-0.0681137741
+		6:leaf=0.0725597143
+booster[40]:
+0:[ymJqhScore<624.5] yes=1,no=2,missing=1
+	1:[ymJqhScore<-4234.5] yes=3,no=4,missing=3
+		3:leaf=-0.0261734426
+		4:leaf=0.0413714908
+	2:[hds_var41<21.3203125] yes=5,no=6,missing=5
+		5:leaf=-0.018110903
+		6:leaf=-0.0611741357
+booster[41]:
+0:[education_college<0.684814453] yes=1,no=2,missing=1
+	1:[plan_prob<63.5] yes=3,no=4,missing=3
+		3:leaf=0.0392321609
+		4:leaf=-0.0142007871
+	2:[age<27.5] yes=5,no=6,missing=5
+		5:leaf=-0.0135880923
+		6:leaf=-0.0586438291
+booster[42]:
+0:[apollo_osBalanceXJAll<-4443.5] yes=1,no=2,missing=1
+	1:[age<29.5] yes=3,no=4,missing=3
+		3:leaf=0.0469313972
+		4:leaf=-0.0210237019
+	2:[education_college<0.516845703] yes=5,no=6,missing=5
+		5:leaf=0.0188723076
+		6:leaf=-0.0430345051
+booster[43]:
+0:[ymJqhScore<662.5] yes=1,no=2,missing=1
+	1:[hds_var36<0.967529297] yes=3,no=4,missing=3
+		3:leaf=0.0185372718
+		4:leaf=-0.0568329692
+	2:[gd_NIKEAScore1500<617.5] yes=5,no=6,missing=5
+		5:leaf=-0.0174092855
+		6:leaf=-0.0744042322
+booster[44]:
+0:[ymJqhScore<734.5] yes=1,no=2,missing=1
+	1:[xy_applyLoanQueryNumL6M<1.5] yes=3,no=4,missing=3
+		3:leaf=-0.0156520475
+		4:leaf=0.0335309915
+	2:[education_college<0.759033203] yes=5,no=6,missing=5
+		5:leaf=-0.0801295862
+		6:leaf=-0.00149407331
+booster[45]:
+0:[apollo_osBalanceXJAll<-4443.5] yes=1,no=2,missing=1
+	1:[age<29.5] yes=3,no=4,missing=3
+		3:leaf=0.0536814816
+		4:leaf=-0.0171681773
+	2:[education_college<0.675537109] yes=5,no=6,missing=5
+		5:leaf=-0.00537986169
+		6:leaf=-0.052704569
+booster[46]:
+0:[ymJqhScore<611.5] yes=1,no=2,missing=1
+	1:[ymJqhScore<-4229] yes=3,no=4,missing=3
+		3:leaf=-0.0306353997
+		4:leaf=0.067156136
+	2:[rm_zx_max_drawdown_amt<4850] yes=5,no=6,missing=5
+		5:leaf=-0.0132274209
+		6:leaf=-0.0687145218
+booster[47]:
+0:[ymJqhScore<717.5] yes=1,no=2,missing=1
+	1:[apollo_osBalanceXJAll<-4443.5] yes=3,no=4,missing=3
+		3:leaf=0.0190793369
+		4:leaf=-0.0207992624
+	2:[xy_behaviorFailPayNumHist<-4444] yes=5,no=6,missing=5
+		5:leaf=-0.064079605
+		6:leaf=0.00215954194
+booster[48]:
+0:[ymJqhScore<574.5] yes=1,no=2,missing=1
+	1:[ymJqhScore<-4234.5] yes=3,no=4,missing=3
+		3:leaf=-0.0232366174
+		4:leaf=0.154634342
+	2:[overdue_amount_max<12.8789062] yes=5,no=6,missing=5
+		5:leaf=-0.0282286312
+		6:leaf=0.0498819165
+booster[49]:
+0:[hds_var38<0.30859375] yes=1,no=2,missing=1
+	1:[hds_var38<0.247436523] yes=3,no=4,missing=3
+		3:leaf=0.00593461236
+		4:leaf=0.0985029712
+	2:[hds_var37<660.5] yes=5,no=6,missing=5
+		5:leaf=-0.0381550863
+		6:leaf=0.0047743218
+booster[50]:
+0:[consumer_stability<91.84375] yes=1,no=2,missing=1
+	1:[overdue_days_max<0.5] yes=3,no=4,missing=3
+		3:leaf=0.001218135
+		4:leaf=0.122770965
+	2:[hds_var122<3.57910156] yes=5,no=6,missing=5
+		5:leaf=-0.0215093009
+		6:leaf=-0.0948733315
+booster[51]:
+0:[xy_behaviorFailPayNumHist<0.5] yes=1,no=2,missing=1
+	1:[rm_zx_unsec_os_amt<4661.5] yes=3,no=4,missing=3
+		3:leaf=-0.0112380618
+		4:leaf=-0.0766695812
+	2:[xy_behaviorLoanDur<305.5] yes=5,no=6,missing=5
+		5:leaf=0.0645332858
+		6:leaf=-0.0616686717
+booster[52]:
+0:[hds_var75<5.5] yes=1,no=2,missing=1
+	1:[rm_zx_unsec_os_amt<4675.5] yes=3,no=4,missing=3
+		3:leaf=0.0129282353
+		4:leaf=-0.0638318956
+	2:[overdue_days_max<2.5] yes=5,no=6,missing=5
+		5:leaf=-0.0595270209
+		6:leaf=0.0841036662
+booster[53]:
+0:[education_college<0.404174805] yes=1,no=2,missing=1
+	1:[education_college<0.30456543] yes=3,no=4,missing=3
+		3:leaf=-0.0280072633
+		4:leaf=0.141634688
+	2:[overdue_amount_max<45.765625] yes=5,no=6,missing=5
+		5:leaf=-0.0188285112
+		6:leaf=0.0551681779
+booster[54]:
+0:[ymJqhScore<610.5] yes=1,no=2,missing=1
+	1:[tongdunIdMultiLoanNumPf<6.5] yes=3,no=4,missing=3
+		3:leaf=0.0387696438
+		4:leaf=-0.0440082327
+	2:[xy_behaviorFailPayNumHist<1.5] yes=5,no=6,missing=5
+		5:leaf=-0.0203062501
+		6:leaf=0.0506410785
+booster[55]:
+0:[xy_applyLoanQueryNumL6M<-4444] yes=1,no=2,missing=1
+	1:[hasOverdueOnPlatform<-4444] yes=3,no=4,missing=3
+		3:leaf=-0.0241506342
+		4:leaf=0.111856602
+	2:[tongdunIdMultiLoanNumPf<6.5] yes=5,no=6,missing=5
+		5:leaf=0.0384061374
+		6:leaf=-0.0280864667
+booster[56]:
+0:[education_graduateschool<0.0328521729] yes=1,no=2,missing=1
+	1:[hds_var120<12.5] yes=3,no=4,missing=3
+		3:leaf=-0.0784990415
+		4:leaf=0.0435156524
+	2:[apollo_osBalanceXJAll<-4443.5] yes=5,no=6,missing=5
+		5:leaf=0.0221398603
+		6:leaf=-0.0164536629
+booster[57]:
+0:[xy_applyLoanQueryNumL6M<1.5] yes=1,no=2,missing=1
+	1:[tongdunIdMultiLoanNumPf<5.5] yes=3,no=4,missing=3
+		3:leaf=-0.0161117967
+		4:leaf=0.0370188504
+	2:[education_college<0.691650391] yes=5,no=6,missing=5
+		5:leaf=0.0728766471
+		6:leaf=-0.0258704461
+booster[58]:
+0:[hds_var37<739.5] yes=1,no=2,missing=1
+	1:[plan_prob<65.5] yes=3,no=4,missing=3
+		3:leaf=0.0215390399
+		4:leaf=-0.0171432029
+	2:[plan_prob<89.5] yes=5,no=6,missing=5
+		5:leaf=0.0958461985
+		6:leaf=-0.0777622089
+booster[59]:
+0:[ymJqhScore<689.5] yes=1,no=2,missing=1
+	1:[hds_var36<0.921386719] yes=3,no=4,missing=3
+		3:leaf=0.0202884879
+		4:leaf=-0.0396572091
+	2:[hds_var162<219] yes=5,no=6,missing=5
+		5:leaf=-0.040307194
+		6:leaf=0.0736135095
+booster[60]:
+0:[ymJqhScore<615.5] yes=1,no=2,missing=1
+	1:[hds_var38<0.341674805] yes=3,no=4,missing=3
+		3:leaf=0.0570008457
+		4:leaf=-0.0062942626
+	2:[shCISCreditLine<-8887.5] yes=5,no=6,missing=5
+		5:leaf=-0.0399940349
+		6:leaf=0.00397375179
+booster[61]:
+0:[rm_zx_unsec_os_amt<4853.5] yes=1,no=2,missing=1
+	1:[xy_behaviorFailPayNumHist<0.5] yes=3,no=4,missing=3
+		3:leaf=-0.00577045651
+		4:leaf=0.0563903153
+	2:[rm_zx_max_drawdown_amt<104438.5] yes=5,no=6,missing=5
+		5:leaf=-0.0701763779
+		6:leaf=0.0362988636
+booster[62]:
+0:[rm_zx_max_drawdown_amt<12769] yes=1,no=2,missing=1
+	1:[xy_behaviorFailPayNumHist<10.5] yes=3,no=4,missing=3
+		3:leaf=-0.00231938274
+		4:leaf=0.123300433
+	2:[hds_var161<168.3125] yes=5,no=6,missing=5
+		5:leaf=-0.0781175047
+		6:leaf=0.0969680771
+booster[63]:
+0:[hds_var36<1.14697266] yes=1,no=2,missing=1
+	1:[hds_var122<15.2929688] yes=3,no=4,missing=3
+		3:leaf=0.00109478494
+		4:leaf=0.115035489
+	2:[ymJqhScore<771.5] yes=5,no=6,missing=5
+		5:leaf=-0.0698339939
+		6:leaf=0.0352701917
+booster[64]:
+0:[overdue_days_max<4.5] yes=1,no=2,missing=1
+	1:[hds_var37<739.5] yes=3,no=4,missing=3
+		3:leaf=-0.00518828165
+		4:leaf=0.0520279408
+	2:[education_graduateschool<0.0689086914] yes=5,no=6,missing=5
+		5:leaf=0.123562038
+		6:leaf=-0.0218223538
+booster[65]:
+0:[education_graduateschool<0.0345458984] yes=1,no=2,missing=1
+	1:[hds_var120<12.5] yes=3,no=4,missing=3
+		3:leaf=-0.0731224567
+		4:leaf=0.0348524861
+	2:[education_college<0.388305664] yes=5,no=6,missing=5
+		5:leaf=0.118917443
+		6:leaf=-0.000189216968
+booster[66]:
+0:[hds_var41<0.049987793] yes=1,no=2,missing=1
+	1:[plan_prob<61.5] yes=3,no=4,missing=3
+		3:leaf=0.0433861986
+		4:leaf=-0.00243634987
+	2:[education_graduateschool<0.174865723] yes=5,no=6,missing=5
+		5:leaf=-0.04597589
+		6:leaf=0.0782153606
+booster[67]:
+0:[tongdunIdMultiLoanNumPf<6.5] yes=1,no=2,missing=1
+	1:[tongdunIdMultiLoanNumPf<5.5] yes=3,no=4,missing=3
+		3:leaf=-0.00205396907
+		4:leaf=0.0638885945
+	2:[education_graduateschool<0.0476989746] yes=5,no=6,missing=5
+		5:leaf=0.020192055
+		6:leaf=-0.0555077977
+booster[68]:
+0:[ymJqhScore<734.5] yes=1,no=2,missing=1
+	1:[ymJqhScore<732.5] yes=3,no=4,missing=3
+		3:leaf=0.00171107927
+		4:leaf=0.180000827
+	2:[education_college<0.766357422] yes=5,no=6,missing=5
+		5:leaf=-0.0868710577
+		6:leaf=0.0303190239
+booster[69]:
+0:[hds_var38<0.584472656] yes=1,no=2,missing=1
+	1:[education_college<0.398071289] yes=3,no=4,missing=3
+		3:leaf=0.076357387
+		4:leaf=0.00111808244
+	2:[consumer_stability<90.78125] yes=5,no=6,missing=5
+		5:leaf=-0.00482069002
+		6:leaf=-0.0762887448
+booster[70]:
+0:[hds_var38<0.423339844] yes=1,no=2,missing=1
+	1:[hds_var41<28.8984375] yes=3,no=4,missing=3
+		3:leaf=0.02730144
+		4:leaf=-0.0397167206
+	2:[hds_var113<219.690002] yes=5,no=6,missing=5
+		5:leaf=-0.0105784824
+		6:leaf=-0.0641826317
+booster[71]:
+0:[consumer_stability<91.84375] yes=1,no=2,missing=1
+	1:[overdue_days_max<0.5] yes=3,no=4,missing=3
+		3:leaf=0.00632135663
+		4:leaf=0.0988540798
+	2:[consumer_stability<95.15625] yes=5,no=6,missing=5
+		5:leaf=-0.0621237122
+		6:leaf=0.0148407016
+booster[72]:
+0:[gd_NIKEAScore1500<583.5] yes=1,no=2,missing=1
+	1:[tongdunP2PNumPfL3M<1.5] yes=3,no=4,missing=3
+		3:leaf=0.0203367174
+		4:leaf=-0.015065955
+	2:[education_graduateschool<0.0709533691] yes=5,no=6,missing=5
+		5:leaf=-0.0522568487
+		6:leaf=0.00741549581
+booster[73]:
+0:[gd_NIKEAScore1500<620.5] yes=1,no=2,missing=1
+	1:[hds_var24<19.5] yes=3,no=4,missing=3
+		3:leaf=-0.00566042215
+		4:leaf=0.0429110937
+	2:[hds_var122<0.657470703] yes=5,no=6,missing=5
+		5:leaf=-0.00273887184
+		6:leaf=-0.0733313486
+booster[74]:
+0:[rm_zx_dept_cnt_1m<-4443.5] yes=1,no=2,missing=1
+	1:[plan_prob<65.5] yes=3,no=4,missing=3
+		3:leaf=0.0252292752
+		4:leaf=-0.00777222961
+	2:[consumer_stability<83.15625] yes=5,no=6,missing=5
+		5:leaf=-0.0880365893
+		6:leaf=-0.011667612
+booster[75]:
+0:[hds_var36<1.37744141] yes=1,no=2,missing=1
+	1:[hds_var36<0.762939453] yes=3,no=4,missing=3
+		3:leaf=-0.00304831495
+		4:leaf=0.0323217511
+	2:[gd_NIKEAScore1500<607] yes=5,no=6,missing=5
+		5:leaf=-0.087027736
+		6:leaf=-0.0129182907
+booster[76]:
+0:[ymJqhScore<689.5] yes=1,no=2,missing=1
+	1:[education_graduateschool<0.0961608887] yes=3,no=4,missing=3
+		3:leaf=0.0172312912
+		4:leaf=-0.0304815806
+	2:[hds_var120<9.5] yes=5,no=6,missing=5
+		5:leaf=-0.0477019921
+		6:leaf=0.0252300557
+booster[77]:
+0:[rm_zx_unsec_os_amt<7226] yes=1,no=2,missing=1
+	1:[shCISCreditLine<-8887.5] yes=3,no=4,missing=3
+		3:leaf=-0.0218904074
+		4:leaf=0.013807781
+	2:[hds_var162<121.3125] yes=5,no=6,missing=5
+		5:leaf=-0.0769174621
+		6:leaf=0.0473689102
+booster[78]:
+0:[rm_zx_max_drawdown_amt<79100.5] yes=1,no=2,missing=1
+	1:[rm_zx_max_drawdown_amt<12735] yes=3,no=4,missing=3
+		3:leaf=0.00650381669
+		4:leaf=-0.0736793429
+	2:[age<42.5] yes=5,no=6,missing=5
+		5:leaf=0.192337424
+		6:leaf=-0.0567000881
+booster[79]:
+0:[hds_var75<5.5] yes=1,no=2,missing=1
+	1:[hds_var122<1.98046875] yes=3,no=4,missing=3
+		3:leaf=-0.0028354954
+		4:leaf=0.0422894396
+	2:[hds_var122<0.150268555] yes=5,no=6,missing=5
+		5:leaf=0.0548033118
+		6:leaf=-0.0623477958

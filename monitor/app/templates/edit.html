@@ -1,0 +1,97 @@
+{% extends "base1.html" %}
+
+{% block title %} <title>{{model_name}}</title> {% endblock %}
+
+{% block page_main %}
+<main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+  <h1 align=center>{{model_name}}</h1>
+  <hr>
+  <form class="form-horizontal" method="post">
+    <fieldset class="text-center">
+      <div id="legend" class="">
+        <legend class="">监控周总结</legend>
+      </div>
+
+      <div class="control-group">
+          <!-- Text input-->
+          <label class="control-label" for="input01">PSI监控人数</label>
+          <div class="controls">
+            <input type="text" placeholder="PSI监控人数" class="input-xlarge" style="width:450px;height:35px" name="PSINum" value={{recent_PSI_num}}>
+            <p class="help-block"></p>
+          </div>
+        </div>
+
+        <div class="control-group">
+          <!-- Search input-->
+          <label class="control-label">本周监控PSI</label>
+          <div class="controls">
+            <input type="text" placeholder="PSI值" class="input-xlarge" style="width:450px;height:35px" name="PSIValue" value={{recent_PSI}}>
+            <p class="help-block"></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <!-- Text input-->
+        <label class="control-label" for="input01">KS监控人数</label>
+        <div class="controls">
+          <input type="text" placeholder="KS监控人数" class="input-xlarge" style="width:450px;height:35px" name="KSNum" value={{recent_KS_num}}>
+          <p class="help-block"></p>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <!-- Text input-->
+        <label class="control-label" for="input01">本周监控KS</label>
+        <div class="controls">
+          <input type="text" placeholder="KS值" class="input-xlarge" style="width:450px;height:35px" name="KSValue" value={{recent_KS}}>
+          <p class="help-block"></p>
+        </div>
+      </div>
+
+      <div class="control-group">
+          <label class="control-label">整体监控等级</label>
+        <div class="controls">
+          <!-- Multiple Radios -->
+          <label class="radio">
+            <input type="radio" value="green" name="group" checked="checked">
+            green
+          </label>
+          <label class="radio">
+            <input type="radio" value="yellow" name="group">
+            yellow
+          </label>
+          <label class="radio">
+            <input type="radio" value="red" name="group">
+            red
+          </label>
+        </div>
+      </div>
+      <div class="control-group">
+        <!-- Textarea -->
+        <label class="control-label">监控总结</label>
+        <div class="controls">
+          <div class="textarea">
+            {% if recent_PSI_window and recent_KS_window %}
+              <textarea type="" class="" style="width:450px;height:120px" name="summary">稳定性:本周({{recent_PSI_window}})&#10有效性:本周({{recent_KS_window}})</textarea>
+            {% elif recent_PSI_window %}
+              <textarea type="" class="" style="width:450px;height:120px" name="summary">稳定性:本周({{recent_PSI_window}})</textarea>
+            {% else %}
+              <textarea type="" class="" style="width:450px;height:120px" name="summary"></textarea>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <label class="control-label"></label>
+        <!-- Button -->
+        <div class="controls">
+          <button class="btn btn-success" type="submit">提交总结</button>
+        </div>
+      </div>
+
+    </fieldset>
+  </form>
+</main>
+{% endblock %}

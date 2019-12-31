@@ -1,0 +1,13 @@
+{% extends "base1.html" %}
+
+{% block title %} <title>{{model_name}}</title> {% endblock %}
+{% block page_main %}
+<main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+    <h1 align=center>{{model_name}}</h1>
+    <hr>
+    {% if monitor_var=='KS' %}
+      <h2 align=center>{{model_name}}还未开始监控KS</h1>
+    {% else %}
+      <h2 align=center>您不是{{model_name}}的owner，没有操作权限</h1>
+    {% endif %}
+{% endblock %}

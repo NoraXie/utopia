@@ -1,0 +1,29 @@
+model_name,product_line,psi_benchmark,psi_critical_point1,psi_critical_point2,psi口径,psi上线时间,ks_benchmark,ks_critical_point1,ks_critical_point2,ks口径,ks上线时间,owner
+DB_A_CR_V4_6vars,大白,0.403,0.503,0.653,7D With Score,2018/1/22,0.2,0.17,0.15,Y=30+ @ drawdown后90天,2018/5/21,zhenwei.jin
+DB_A_CR_V4_7vars,大白,0.375,0.475,0.625,7D With Score,2017/12/25,0.31,0.2635,0.2325,Y=30+ @ drawdown后90天,2018/5/21,zhenwei.jin
+DB_A_V5_nolist,大白,0.203,0.303,0.453,7D With Score,2018/6/11,0.091,0.07735,0.06825,Y=ever7@mob1~2,2018/8/6,zhenwei.jin
+DB_A_V5_S2_var5,大白,0.286,0.386,0.536,7D With Score,2018/6/18,0.096,,,,,zhenwei.jin
+DB_A_V5_S2_var6,大白,0.33,0.43,0.58,7D With Score,2018/6/18,0.103,0.08755,0.07725,Y=ever15@mob1~2,2018/8/6,zhenwei.jin
+YZF_A_V5,分期,0.154,0.254,0.404,7D With Score,2018/4/30,0.199,0.16915,0.14925,Y=0+ @ drawdown后30天，包含不确定样本,2018/4/30,zhenwei.jin
+XJD_A_V4.2_UTNZ@walletH5Credit,自营个贷,0.04,0.14,0.29,7D With Score,2018/3/6,0.05,0.0425,0.0375,FID30,2018/4/23,mingqing.fang
+XJD_A_V4.2_UTNZ@walletAppCredit,自营个贷,0.233,0.333,0.483,7D With Score,2018/3/6,0.064,0.0544,0.048,FID30,2018/4/23,mingqing.fang
+XJD_A_V5_FID7@walletH5Credit,自营个贷,0.071,0.171,0.321,7D With Score,2018/5/14,0.14,0.119,0.105,FID30,2018/6/18,mingqing.fang
+XJD_A_V5_FID7@walletAppCredit,自营个贷,0.06,0.16,0.31,7D With Score,2018/5/14,0.23,0.1955,0.1725,FID30,2018/6/18,mingqing.fang
+XJD_A_V5_FID15N700@walletH5Credit,自营个贷,0.194,0.294,0.444,7D With Score,2018/6/11,0.172,0.1462,0.129,FID7,2018/7/16,mingqing.fang
+XJD_A_V5_FID15N700@walletAppCredit,自营个贷,0.16,0.26,0.41,7D With Score,2018/6/11,0.194,0.1649,0.1455,FID7,2018/7/16,mingqing.fang
+XJD_A_V5_FID15N500@walletH5Credit,自营个贷,0.205,0.305,0.455,7D With Score,2018/6/11,0.082,0.0697,0.0615,FID7,2018/7/16,mingqing.fang
+XJD_A_V5_FID15N500@walletAppCredit,自营个贷,0.19,0.29,0.44,7D With Score,2018/6/11,0.17,0.1445,0.1275,FID7,2018/7/16,mingqing.fang
+JQH_A_V2.2,自营渠道,2.38,2.48,2.63,7D With Score,2018/5/14,0.249,0.21165,0.18675,Ever7+@37D 1 Month With Perf,2018/5/14,ying.xie
+JQH_B_V1_VAR4,自营渠道,0.847,0.947,1.097,7D With Score,2018/4/9,0.5,0.4,0.38,Ever30+MOB6,2018/10/9,ying.xie
+JQH_B_V1_VAR6,自营渠道,2.115,2.215,2.365,7D With Score,2018/4/9,0.5,0.4,0.38,Ever30+MOB6,2018/10/9,ying.xie
+JQH_B_V1_VAR7,自营渠道,1.345,1.445,1.595,7D With Score,2018/4/9,0.5,0.4,0.38,Ever30+MOB6,2018/10/9,ying.xie
+JQH_B_V1_VAR9,自营渠道,1.5,1.6,1.75,7D With Score,2018/4/9,0.5,0.4,0.38,Ever30+MOB6,2018/10/9,ying.xie
+LSD_SQB_A_V2,小企业,0.16,0.26,0.36,7D With Score,2018/7/17,,,,,2019/1/17,yiming.zhao
+XJD_B_V1,自营个贷,0.25,0.277,0.5,7D With Score,2017/8/18,0.38,0.4,0.365,Ever30+放款后90天,2017/11/18,linlin.ding
+XJD_B_V2,自营个贷,0.28,0.38,0.6,7D With Score,2018/4/19,0.4,0.38,0.365,Ever30+授信后5个月,2018/9/19,linlin.ding
+JQH_A_V2.2_R1,自营渠道,2.38,2.48,2.63,7D With Score,2018/5/14,0.249,0.21165,0.18675,Ever7+@37D 1 Month With Perf,2018/5/14,ying.xie
+JQH_A_R2_V5_FID7,自营渠道,0.1,0.1,0.25,7D With Score,2018/5/14,0.2,0.17,0.15,Ever7+@37D 1 Month With Perf,2018/5/14,ying.xie
+XJD_A_V5_MOB3@walletAppCredit,自营个贷,0.222,0.322,0.472,7D With Score,2018/8/7,,,,,,ying.xie
+XJD_A_V5_MOB3@walletH5Credit,自营个贷,0.163,0.263,0.413,7D With Score,2018/8/7,,,,,,ying.xie
+XJD_A_V5_JUPITER@walletAppCredit,自营个贷,0.285,0.385,0.535,7D With Score,2018/8/7,,,,,,ying.xie
+XJD_A_V5_JUPITER@walletH5Credit,自营个贷,0.193,0.293,0.443,7D With Score,2018/8/7,,,,,,ying.xie

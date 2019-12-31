@@ -1,0 +1,12 @@
+{
+	"max_depth": 2,
+	"min_samples_leaf ": 200,
+	"eta": 0.1,
+	"objective": "binary:logistic",
+	"subsample": 0.8,
+	"colsample_bytree": 0.8,
+	"gamma": 0,
+	"silent": 0,
+	"eval_metric": "auc",
+	"num_boost_round": 80
+}

@@ -1,0 +1,1158 @@
+INFO:root:Overall ranking prep: auto binning started
+INFO:root:Overall ranking prep: auto binning completed
+INFO:root:Overall ranking prep: woe calculation completed
+INFO:root:Overall ranking prep: IV completed
+INFO:root:Overall ranking prep: Random Forest completed
+INFO:root:xgb_cv start
+INFO:root:Overall ranking prep: Xgboost completed
+INFO:root:Overall ranking prep: LASSO completed
+INFO:root:xgb_cv start
+INFO:root:XGB建模经排序选择变量更新于/Users/ying.xie/Documents/repositories/sublime_projects/ge/02_result/variable_filter.json
+INFO:root:XGB建模排序选择排序存储于/Users/ying.xie/Documents/repositories/sublime_projects/ge/02_result/xgb_select_rank.xlsx
+INFO:root:开始超参调参
+INFO:hyperopt.tpe:tpe_transform took 0.002586 seconds
+INFO:hyperopt.tpe:TPE using 0 trials
+INFO:hyperopt.tpe:tpe_transform took 0.002567 seconds
+INFO:hyperopt.tpe:TPE using 1/1 trials with best loss -0.720000
+INFO:hyperopt.tpe:tpe_transform took 0.006052 seconds
+INFO:hyperopt.tpe:TPE using 2/2 trials with best loss -0.740000
+INFO:hyperopt.tpe:tpe_transform took 0.002594 seconds
+INFO:hyperopt.tpe:TPE using 3/3 trials with best loss -0.755673
+INFO:hyperopt.tpe:tpe_transform took 0.003116 seconds
+INFO:hyperopt.tpe:TPE using 4/4 trials with best loss -0.776346
+INFO:root:xgb_cv start
+INFO:root:随机调参完成！
+INFO:root:随机调参最优参数存储于/Users/ying.xie/Documents/repositories/sublime_projects/ge/01_data/xgboost_params_hyperopt.json
+INFO:root:XGBoost模型使用Hyperopt调参所选最优参数建模
+INFO:root:XGB模型在参数已调整好后，使用全部TRAIN&TEST数据集建模
+INFO:root:param=={'colsample_bytree': 0.3380705898534885, 'gamma': 0.004769174941406731, 'learning_rate': 0.05628094021432964, 'max_depth': 2, 'min_child_weight': 1, 'n_estimators': 321, 'subsample': 0.5, 'eval_metric': 'auc', 'objective': 'binary:logistic', 'num_boost_round': 159}
+INFO:root:param=={'colsample_bytree': 0.3380705898534885, 'gamma': 0.004769174941406731, 'learning_rate': 0.05628094021432964, 'max_depth': 2, 'min_child_weight': 1, 'n_estimators': 321, 'subsample': 0.5, 'eval_metric': 'auc', 'objective': 'binary:logistic', 'num_boost_round': 159}
+INFO:root:param=={'colsample_bytree': 0.3380705898534885, 'gamma': 0.004769174941406731, 'learning_rate': 0.05628094021432964, 'max_depth': 2, 'min_child_weight': 1, 'n_estimators': 321, 'subsample': 0.5, 'eval_metric': 'auc', 'objective': 'binary:logistic', 'num_boost_round': 159}
+INFO:root:param=={'colsample_bytree': 0.3380705898534885, 'gamma': 0.004769174941406731, 'learning_rate': 0.05628094021432964, 'max_depth': 2, 'min_child_weight': 1, 'n_estimators': 321, 'subsample': 0.5, 'eval_metric': 'auc', 'objective': 'binary:logistic', 'num_boost_round': 159}
+INFO:root:param=={'colsample_bytree': 0.3380705898534885, 'gamma': 0.004769174941406731, 'learning_rate': 0.05628094021432964, 'max_depth': 2, 'min_child_weight': 1, 'n_estimators': 321, 'subsample': 0.5, 'eval_metric': 'auc', 'objective': 'binary:logistic', 'num_boost_round': 159}
+INFO:root:param=={'colsample_bytree': 0.3380705898534885, 'gamma': 0.004769174941406731, 'learning_rate': 0.05628094021432964, 'max_depth': 2, 'min_child_weight': 1, 'n_estimators': 321, 'subsample': 0.5, 'eval_metric': 'auc', 'objective': 'binary:logistic', 'num_boost_round': 159}
+INFO:root:
+        XGB 模型建模输出：
+        1. 模型文件，预测概率等存储于： /Users/ying.xie/Documents/repositories/sublime_projects/ge/01_data/demo_xgb_v2XGBHyperopt模型结果.pkl
+        2. 模型变量重要性排序存储于：/Users/ying.xie/Documents/repositories/sublime_projects/ge/02_result/demo_xgb_v2XGBHyperopt模型变量重要性排序.xlsx
+        
+INFO:root:xgb_cv start
+INFO:root:XGB建模经排序选择变量更新于/Users/ying.xie/Documents/repositories/sublime_projects/ge/02_result/variable_filter.json
+INFO:root:XGB建模排序选择排序存储于/Users/ying.xie/Documents/repositories/sublime_projects/ge/02_result/xgb_select_rank.xlsx
+INFO:root:xgb_cv start
+INFO:root:经验参数存储于/Users/ying.xie/Documents/repositories/sublime_projects/ge/01_data/xgboost_params_experience.json
+INFO:root:开始网格调参
+INFO:root:GridSearch搜索的组合:96
+INFO:root:GridSearch最佳mean_test_score:0.7275534159368018
+INFO:root:GridSearch最佳参数:{'gamma': 0, 'learning_rate': 0.03, 'max_depth': 2, 'min_child_weight': 3}
+INFO:root:xgb_cv start
+INFO:root:网格调参完成！
+INFO:root:网格调参最优参数存储于/Users/ying.xie/Documents/repositories/sublime_projects/ge/01_data/xgboost_params_gridsearch.json
+INFO:root:开始随机调参
+INFO:root:xgb_cv start
+INFO:root:XGB建模经排序选择变量更新于/Users/ying.xie/Documents/repositories/sublime_projects/ge/02_result/variable_filter.json
+INFO:root:XGB建模排序选择排序存储于/Users/ying.xie/Documents/repositories/sublime_projects/ge/02_result/xgb_select_rank.xlsx
+INFO:root:xgb_cv start
+INFO:root:经验参数存储于/Users/ying.xie/Documents/repositories/sublime_projects/ge/01_data/xgboost_params_experience.json
+INFO:root:开始网格调参
+INFO:root:GridSearch搜索的组合:96
+INFO:root:GridSearch最佳mean_test_score:0.7225179841891652
+INFO:root:GridSearch最佳参数:{'gamma': 0, 'learning_rate': 0.03, 'max_depth': 2, 'min_child_weight': 1}
+INFO:root:xgb_cv start
+INFO:root:网格调参完成！
+INFO:root:网格调参最优参数存储于/Users/ying.xie/Documents/repositories/sublime_projects/ge/01_data/xgboost_params_gridsearch.json
+INFO:root:开始随机调参
+INFO:root:RandomSearch搜索的组合:10
+INFO:root:RandomSearch最佳mean_test_score:0.7225179841891652
+INFO:root:RandomSearch最佳参数:{'min_child_weight': 1, 'max_depth': 2, 'learning_rate': 0.03, 'gamma': 0}
+INFO:root:xgb_cv start
+INFO:root:随机调参完成！
+INFO:root:随机调参最优参数存储于/Users/ying.xie/Documents/repositories/sublime_projects/ge/01_data/xgboost_params_randomsearch.json
+INFO:root:开始超参调参
+INFO:hyperopt.tpe:tpe_transform took 0.004667 seconds
+INFO:hyperopt.tpe:TPE using 0 trials
+INFO:hyperopt.tpe:tpe_transform took 0.004249 seconds
+INFO:hyperopt.tpe:TPE using 1/1 trials with best loss -0.737885
+INFO:hyperopt.tpe:tpe_transform took 0.003578 seconds
+INFO:hyperopt.tpe:TPE using 2/2 trials with best loss -0.737885
+INFO:hyperopt.tpe:tpe_transform took 0.003476 seconds
+INFO:hyperopt.tpe:TPE using 3/3 trials with best loss -0.767500
+INFO:hyperopt.tpe:tpe_transform took 0.004540 seconds
+INFO:hyperopt.tpe:TPE using 4/4 trials with best loss -0.767500
+INFO:hyperopt.tpe:tpe_transform took 0.003396 seconds
+INFO:hyperopt.tpe:TPE using 5/5 trials with best loss -0.767500
+INFO:hyperopt.tpe:tpe_transform took 0.003618 seconds
+INFO:hyperopt.tpe:TPE using 6/6 trials with best loss -0.767500
+INFO:hyperopt.tpe:tpe_transform took 0.003428 seconds
+INFO:hyperopt.tpe:TPE using 7/7 trials with best loss -0.767500
+INFO:hyperopt.tpe:tpe_transform took 0.003447 seconds
+INFO:hyperopt.tpe:TPE using 8/8 trials with best loss -0.770385
+INFO:hyperopt.tpe:tpe_transform took 0.006360 seconds
+INFO:hyperopt.tpe:TPE using 9/9 trials with best loss -0.770385
+INFO:hyperopt.tpe:tpe_transform took 0.003444 seconds
+INFO:hyperopt.tpe:TPE using 10/10 trials with best loss -0.770385
+INFO:hyperopt.tpe:tpe_transform took 0.003460 seconds
+INFO:hyperopt.tpe:TPE using 11/11 trials with best loss -0.770385
+INFO:hyperopt.tpe:tpe_transform took 0.003500 seconds
+INFO:hyperopt.tpe:TPE using 12/12 trials with best loss -0.770385
+INFO:hyperopt.tpe:tpe_transform took 0.004374 seconds
+INFO:hyperopt.tpe:TPE using 13/13 trials with best loss -0.770385
+INFO:hyperopt.tpe:tpe_transform took 0.005536 seconds
+INFO:hyperopt.tpe:TPE using 14/14 trials with best loss -0.770385
+INFO:hyperopt.tpe:tpe_transform took 0.004585 seconds
+INFO:hyperopt.tpe:TPE using 15/15 trials with best loss -0.770385
+INFO:hyperopt.tpe:tpe_transform took 0.004288 seconds
+INFO:hyperopt.tpe:TPE using 16/16 trials with best loss -0.770385
+INFO:hyperopt.tpe:tpe_transform took 0.003417 seconds
+INFO:hyperopt.tpe:TPE using 17/17 trials with best loss -0.770385
+INFO:hyperopt.tpe:tpe_transform took 0.003429 seconds
+INFO:hyperopt.tpe:TPE using 18/18 trials with best loss -0.770385
+INFO:hyperopt.tpe:tpe_transform took 0.003406 seconds
+INFO:hyperopt.tpe:TPE using 19/19 trials with best loss -0.770385
+INFO:root:xgb_cv start
+INFO:root:随机调参完成！
+INFO:root:随机调参最优参数存储于/Users/ying.xie/Documents/repositories/sublime_projects/ge/01_data/xgboost_params_hyperopt.json
+INFO:root:XGBoost模型使用经验参数建模
+INFO:root:XGB模型在参数已调整好后，使用全部TRAIN&TEST数据集建模
+INFO:root:param=={'max_depth': 2, 'min_samples_leaf ': 200, 'eta': 0.1, 'objective': 'binary:logistic', 'subsample': 0.8, 'colsample_bytree': 0.8, 'gamma': 0, 'silent': 0, 'eval_metric': 'auc', 'num_boost_round': 80}
+INFO:root:param=={'max_depth': 2, 'min_samples_leaf ': 200, 'eta': 0.1, 'objective': 'binary:logistic', 'subsample': 0.8, 'colsample_bytree': 0.8, 'gamma': 0, 'silent': 0, 'eval_metric': 'auc', 'num_boost_round': 80}
+INFO:root:param=={'max_depth': 2, 'min_samples_leaf ': 200, 'eta': 0.1, 'objective': 'binary:logistic', 'subsample': 0.8, 'colsample_bytree': 0.8, 'gamma': 0, 'silent': 0, 'eval_metric': 'auc', 'num_boost_round': 80}
+INFO:root:param=={'max_depth': 2, 'min_samples_leaf ': 200, 'eta': 0.1, 'objective': 'binary:logistic', 'subsample': 0.8, 'colsample_bytree': 0.8, 'gamma': 0, 'silent': 0, 'eval_metric': 'auc', 'num_boost_round': 80}
+INFO:root:param=={'max_depth': 2, 'min_samples_leaf ': 200, 'eta': 0.1, 'objective': 'binary:logistic', 'subsample': 0.8, 'colsample_bytree': 0.8, 'gamma': 0, 'silent': 0, 'eval_metric': 'auc', 'num_boost_round': 80}
+INFO:root:param=={'max_depth': 2, 'min_samples_leaf ': 200, 'eta': 0.1, 'objective': 'binary:logistic', 'subsample': 0.8, 'colsample_bytree': 0.8, 'gamma': 0, 'silent': 0, 'eval_metric': 'auc', 'num_boost_round': 80}
+INFO:root:
+        XGB 模型建模输出：
+        1. 模型文件，预测概率等存储于： /Users/ying.xie/Documents/repositories/sublime_projects/ge/01_data/demo_xgb_v2XGBExp模型结果.pkl
+        2. 模型变量重要性排序存储于：/Users/ying.xie/Documents/repositories/sublime_projects/ge/02_result/demo_xgb_v2XGBExp模型变量重要性排序.xlsx
+        
+INFO:root:XGBoost模型使用GridSearch调参所选最优参数建模
+INFO:root:XGB模型在参数已调整好后，使用全部TRAIN&TEST数据集建模
+INFO:root:param=={'gamma': 0, 'max_depth': 2, 'min_child_weight': 1, 'objective': 'binary:logistic', 'silent': 0, 'nthread': 4, 'eval_metric': 'auc', 'subsample': 0.8, 'colsample_bytree': 0.8, 'eta': 0.03, 'num_boost_round': 38}
+INFO:root:param=={'gamma': 0, 'max_depth': 2, 'min_child_weight': 1, 'objective': 'binary:logistic', 'silent': 0, 'nthread': 4, 'eval_metric': 'auc', 'subsample': 0.8, 'colsample_bytree': 0.8, 'eta': 0.03, 'num_boost_round': 38}
+INFO:root:param=={'gamma': 0, 'max_depth': 2, 'min_child_weight': 1, 'objective': 'binary:logistic', 'silent': 0, 'nthread': 4, 'eval_metric': 'auc', 'subsample': 0.8, 'colsample_bytree': 0.8, 'eta': 0.03, 'num_boost_round': 38}
+INFO:root:param=={'gamma': 0, 'max_depth': 2, 'min_child_weight': 1, 'objective': 'binary:logistic', 'silent': 0, 'nthread': 4, 'eval_metric': 'auc', 'subsample': 0.8, 'colsample_bytree': 0.8, 'eta': 0.03, 'num_boost_round': 38}
+INFO:root:param=={'gamma': 0, 'max_depth': 2, 'min_child_weight': 1, 'objective': 'binary:logistic', 'silent': 0, 'nthread': 4, 'eval_metric': 'auc', 'subsample': 0.8, 'colsample_bytree': 0.8, 'eta': 0.03, 'num_boost_round': 38}
+INFO:root:param=={'gamma': 0, 'max_depth': 2, 'min_child_weight': 1, 'objective': 'binary:logistic', 'silent': 0, 'nthread': 4, 'eval_metric': 'auc', 'subsample': 0.8, 'colsample_bytree': 0.8, 'eta': 0.03, 'num_boost_round': 38}
+INFO:root:
+        XGB 模型建模输出：
+        1. 模型文件，预测概率等存储于： /Users/ying.xie/Documents/repositories/sublime_projects/ge/01_data/demo_xgb_v2XGBGrid模型结果.pkl
+        2. 模型变量重要性排序存储于：/Users/ying.xie/Documents/repositories/sublime_projects/ge/02_result/demo_xgb_v2XGBGrid模型变量重要性排序.xlsx
+        
+INFO:root:XGBoost模型使用RandomSearch调参所选最优参数建模
+INFO:root:XGB模型在参数已调整好后，使用全部TRAIN&TEST数据集建模
+INFO:root:param=={'min_child_weight': 1, 'max_depth': 2, 'gamma': 0, 'objective': 'binary:logistic', 'silent': 0, 'nthread': 4, 'eval_metric': 'auc', 'subsample': 0.8, 'colsample_bytree': 0.8, 'eta': 0.03, 'num_boost_round': 38}
+INFO:root:param=={'min_child_weight': 1, 'max_depth': 2, 'gamma': 0, 'objective': 'binary:logistic', 'silent': 0, 'nthread': 4, 'eval_metric': 'auc', 'subsample': 0.8, 'colsample_bytree': 0.8, 'eta': 0.03, 'num_boost_round': 38}
+INFO:root:param=={'min_child_weight': 1, 'max_depth': 2, 'gamma': 0, 'objective': 'binary:logistic', 'silent': 0, 'nthread': 4, 'eval_metric': 'auc', 'subsample': 0.8, 'colsample_bytree': 0.8, 'eta': 0.03, 'num_boost_round': 38}
+INFO:root:param=={'min_child_weight': 1, 'max_depth': 2, 'gamma': 0, 'objective': 'binary:logistic', 'silent': 0, 'nthread': 4, 'eval_metric': 'auc', 'subsample': 0.8, 'colsample_bytree': 0.8, 'eta': 0.03, 'num_boost_round': 38}
+INFO:root:param=={'min_child_weight': 1, 'max_depth': 2, 'gamma': 0, 'objective': 'binary:logistic', 'silent': 0, 'nthread': 4, 'eval_metric': 'auc', 'subsample': 0.8, 'colsample_bytree': 0.8, 'eta': 0.03, 'num_boost_round': 38}
+INFO:root:param=={'min_child_weight': 1, 'max_depth': 2, 'gamma': 0, 'objective': 'binary:logistic', 'silent': 0, 'nthread': 4, 'eval_metric': 'auc', 'subsample': 0.8, 'colsample_bytree': 0.8, 'eta': 0.03, 'num_boost_round': 38}
+INFO:root:
+        XGB 模型建模输出：
+        1. 模型文件，预测概率等存储于： /Users/ying.xie/Documents/repositories/sublime_projects/ge/01_data/demo_xgb_v2XGBRandom模型结果.pkl
+        2. 模型变量重要性排序存储于：/Users/ying.xie/Documents/repositories/sublime_projects/ge/02_result/demo_xgb_v2XGBRandom模型变量重要性排序.xlsx
+        
+INFO:root:XGBoost模型使用Hyperopt调参所选最优参数建模
+INFO:root:XGB模型在参数已调整好后，使用全部TRAIN&TEST数据集建模
+INFO:root:param=={'colsample_bytree': 0.33798004507299656, 'gamma': 0.0556228471882678, 'learning_rate': 0.05523308653214641, 'max_depth': 3, 'min_child_weight': 2, 'n_estimators': 216, 'reg_alpha': 0.14059588969180753, 'scale_pos_weight': 3, 'subsample': 0.6, 'eval_metric': 'auc', 'objective': 'binary:logistic', 'num_boost_round': 73}
+INFO:root:param=={'colsample_bytree': 0.33798004507299656, 'gamma': 0.0556228471882678, 'learning_rate': 0.05523308653214641, 'max_depth': 3, 'min_child_weight': 2, 'n_estimators': 216, 'reg_alpha': 0.14059588969180753, 'scale_pos_weight': 3, 'subsample': 0.6, 'eval_metric': 'auc', 'objective': 'binary:logistic', 'num_boost_round': 73}
+INFO:root:param=={'colsample_bytree': 0.33798004507299656, 'gamma': 0.0556228471882678, 'learning_rate': 0.05523308653214641, 'max_depth': 3, 'min_child_weight': 2, 'n_estimators': 216, 'reg_alpha': 0.14059588969180753, 'scale_pos_weight': 3, 'subsample': 0.6, 'eval_metric': 'auc', 'objective': 'binary:logistic', 'num_boost_round': 73}
+INFO:root:param=={'colsample_bytree': 0.33798004507299656, 'gamma': 0.0556228471882678, 'learning_rate': 0.05523308653214641, 'max_depth': 3, 'min_child_weight': 2, 'n_estimators': 216, 'reg_alpha': 0.14059588969180753, 'scale_pos_weight': 3, 'subsample': 0.6, 'eval_metric': 'auc', 'objective': 'binary:logistic', 'num_boost_round': 73}
+INFO:root:param=={'colsample_bytree': 0.33798004507299656, 'gamma': 0.0556228471882678, 'learning_rate': 0.05523308653214641, 'max_depth': 3, 'min_child_weight': 2, 'n_estimators': 216, 'reg_alpha': 0.14059588969180753, 'scale_pos_weight': 3, 'subsample': 0.6, 'eval_metric': 'auc', 'objective': 'binary:logistic', 'num_boost_round': 73}
+INFO:root:param=={'colsample_bytree': 0.33798004507299656, 'gamma': 0.0556228471882678, 'learning_rate': 0.05523308653214641, 'max_depth': 3, 'min_child_weight': 2, 'n_estimators': 216, 'reg_alpha': 0.14059588969180753, 'scale_pos_weight': 3, 'subsample': 0.6, 'eval_metric': 'auc', 'objective': 'binary:logistic', 'num_boost_round': 73}
+INFO:root:
+        XGB 模型建模输出：
+        1. 模型文件，预测概率等存储于： /Users/ying.xie/Documents/repositories/sublime_projects/ge/01_data/demo_xgb_v2XGBHyperopt模型结果.pkl
+        2. 模型变量重要性排序存储于：/Users/ying.xie/Documents/repositories/sublime_projects/ge/02_result/demo_xgb_v2XGBHyperopt模型变量重要性排序.xlsx
+        
+INFO:root:xgb_cv start
+INFO:root:XGB建模经排序选择变量更新于/Users/ying.xie/Documents/repositories/sublime_projects/ge/02_result/variable_filter.json
+INFO:root:XGB建模排序选择排序存储于/Users/ying.xie/Documents/repositories/sublime_projects/ge/02_result/xgb_select_rank.xlsx
+INFO:root:xgb_cv start
+INFO:root:经验参数存储于/Users/ying.xie/Documents/repositories/sublime_projects/ge/01_data/xgboost_params_experience.json
+INFO:root:开始超参调参
+INFO:hyperopt.tpe:tpe_transform took 0.003965 seconds
+INFO:hyperopt.tpe:TPE using 0 trials
+INFO:hyperopt.tpe:tpe_transform took 0.003505 seconds
+INFO:hyperopt.tpe:TPE using 1/1 trials with best loss -0.735673
+INFO:hyperopt.tpe:tpe_transform took 0.011063 seconds
+INFO:hyperopt.tpe:TPE using 2/2 trials with best loss -0.735673
+INFO:hyperopt.tpe:tpe_transform took 0.005021 seconds
+INFO:hyperopt.tpe:TPE using 3/3 trials with best loss -0.760096
+INFO:hyperopt.tpe:tpe_transform took 0.003315 seconds
+INFO:hyperopt.tpe:TPE using 4/4 trials with best loss -0.760096
+INFO:hyperopt.tpe:tpe_transform took 0.003428 seconds
+INFO:hyperopt.tpe:TPE using 5/5 trials with best loss -0.760096
+INFO:hyperopt.tpe:tpe_transform took 0.003411 seconds
+INFO:hyperopt.tpe:TPE using 6/6 trials with best loss -0.760096
+INFO:hyperopt.tpe:tpe_transform took 0.003313 seconds
+INFO:hyperopt.tpe:TPE using 7/7 trials with best loss -0.760096
+INFO:hyperopt.tpe:tpe_transform took 0.003346 seconds
+INFO:hyperopt.tpe:TPE using 8/8 trials with best loss -0.768365
+INFO:hyperopt.tpe:tpe_transform took 0.003357 seconds
+INFO:hyperopt.tpe:TPE using 9/9 trials with best loss -0.768365
+INFO:hyperopt.tpe:tpe_transform took 0.003378 seconds
+INFO:hyperopt.tpe:TPE using 10/10 trials with best loss -0.768365
+INFO:hyperopt.tpe:tpe_transform took 0.003313 seconds
+INFO:hyperopt.tpe:TPE using 11/11 trials with best loss -0.768365
+INFO:hyperopt.tpe:tpe_transform took 0.012617 seconds
+INFO:hyperopt.tpe:TPE using 12/12 trials with best loss -0.793077
+INFO:hyperopt.tpe:tpe_transform took 0.007391 seconds
+INFO:hyperopt.tpe:TPE using 13/13 trials with best loss -0.793077
+INFO:hyperopt.tpe:tpe_transform took 0.003464 seconds
+INFO:hyperopt.tpe:TPE using 14/14 trials with best loss -0.793077
+INFO:hyperopt.tpe:tpe_transform took 0.005728 seconds
+INFO:hyperopt.tpe:TPE using 15/15 trials with best loss -0.793077
+INFO:hyperopt.tpe:tpe_transform took 0.003335 seconds
+INFO:hyperopt.tpe:TPE using 16/16 trials with best loss -0.793077
+INFO:hyperopt.tpe:tpe_transform took 0.004218 seconds
+INFO:hyperopt.tpe:TPE using 17/17 trials with best loss -0.794615
+INFO:hyperopt.tpe:tpe_transform took 0.003662 seconds
+INFO:hyperopt.tpe:TPE using 18/18 trials with best loss -0.794615
+INFO:hyperopt.tpe:tpe_transform took 0.003627 seconds
+INFO:hyperopt.tpe:TPE using 19/19 trials with best loss -0.794808
+INFO:root:xgb_cv start
+INFO:root:随机调参完成！
+INFO:root:随机调参最优参数存储于/Users/ying.xie/Documents/repositories/sublime_projects/ge/01_data/xgboost_params_hyperopt.json
+INFO:root:XGBoost模型使用经验参数建模
+INFO:root:XGB模型在参数已调整好后，使用全部TRAIN&TEST数据集建模
+INFO:root:param=={'max_depth': 2, 'min_samples_leaf ': 200, 'eta': 0.1, 'objective': 'binary:logistic', 'subsample': 0.8, 'colsample_bytree': 0.8, 'gamma': 0, 'silent': 0, 'eval_metric': 'auc', 'num_boost_round': 109}
+INFO:root:param=={'max_depth': 2, 'min_samples_leaf ': 200, 'eta': 0.1, 'objective': 'binary:logistic', 'subsample': 0.8, 'colsample_bytree': 0.8, 'gamma': 0, 'silent': 0, 'eval_metric': 'auc', 'num_boost_round': 109}
+INFO:root:param=={'max_depth': 2, 'min_samples_leaf ': 200, 'eta': 0.1, 'objective': 'binary:logistic', 'subsample': 0.8, 'colsample_bytree': 0.8, 'gamma': 0, 'silent': 0, 'eval_metric': 'auc', 'num_boost_round': 109}
+INFO:root:param=={'max_depth': 2, 'min_samples_leaf ': 200, 'eta': 0.1, 'objective': 'binary:logistic', 'subsample': 0.8, 'colsample_bytree': 0.8, 'gamma': 0, 'silent': 0, 'eval_metric': 'auc', 'num_boost_round': 109}
+INFO:root:param=={'max_depth': 2, 'min_samples_leaf ': 200, 'eta': 0.1, 'objective': 'binary:logistic', 'subsample': 0.8, 'colsample_bytree': 0.8, 'gamma': 0, 'silent': 0, 'eval_metric': 'auc', 'num_boost_round': 109}
+INFO:root:param=={'max_depth': 2, 'min_samples_leaf ': 200, 'eta': 0.1, 'objective': 'binary:logistic', 'subsample': 0.8, 'colsample_bytree': 0.8, 'gamma': 0, 'silent': 0, 'eval_metric': 'auc', 'num_boost_round': 109}
+INFO:root:
+        XGB 模型建模输出：
+        1. 模型文件，预测概率等存储于： /Users/ying.xie/Documents/repositories/sublime_projects/ge/01_data/demo_xgb_v2XGBExp模型结果.pkl
+        2. 模型变量重要性排序存储于：/Users/ying.xie/Documents/repositories/sublime_projects/ge/02_result/demo_xgb_v2XGBExp模型变量重要性排序.xlsx
+        
+INFO:root:XGBoost模型使用Hyperopt调参所选最优参数建模
+INFO:root:XGB模型在参数已调整好后，使用全部TRAIN&TEST数据集建模
+INFO:root:param=={'colsample_bytree': 0.34247809214489966, 'gamma': 0.06279074845172568, 'learning_rate': 0.05416236675482186, 'max_depth': 0, 'min_child_weight': 3, 'n_estimators': 174, 'reg_alpha': 0.23110136434524753, 'scale_pos_weight': 1, 'subsample': 0.6, 'eval_metric': 'auc', 'objective': 'binary:logistic', 'num_boost_round': 1}
+INFO:root:xgb_cv start
+INFO:root:XGB建模经排序选择变量更新于/Users/ying.xie/Documents/repositories/sublime_projects/ge/02_result/variable_filter.json
+INFO:root:XGB建模排序选择排序存储于/Users/ying.xie/Documents/repositories/sublime_projects/ge/02_result/xgb_select_rank.xlsx
+INFO:root:xgb_cv start
+INFO:root:经验参数存储于/Users/ying.xie/Documents/repositories/sublime_projects/ge/01_data/xgboost_params_experience.json
+INFO:root:开始超参调参
+INFO:hyperopt.tpe:tpe_transform took 0.003928 seconds
+INFO:hyperopt.tpe:TPE using 0 trials
+INFO:hyperopt.tpe:tpe_transform took 0.003443 seconds
+INFO:hyperopt.tpe:TPE using 1/1 trials with best loss -0.762212
+INFO:hyperopt.tpe:tpe_transform took 0.003441 seconds
+INFO:hyperopt.tpe:TPE using 2/2 trials with best loss -0.764423
+INFO:hyperopt.tpe:tpe_transform took 0.003363 seconds
+INFO:hyperopt.tpe:TPE using 3/3 trials with best loss -0.792596
+INFO:hyperopt.tpe:tpe_transform took 0.003956 seconds
+INFO:hyperopt.tpe:TPE using 4/4 trials with best loss -0.792596
+INFO:hyperopt.tpe:tpe_transform took 0.003342 seconds
+INFO:hyperopt.tpe:TPE using 5/5 trials with best loss -0.792596
+INFO:hyperopt.tpe:tpe_transform took 0.003628 seconds
+INFO:hyperopt.tpe:TPE using 6/6 trials with best loss -0.792596
+INFO:hyperopt.tpe:tpe_transform took 0.003329 seconds
+INFO:hyperopt.tpe:TPE using 7/7 trials with best loss -0.792596
+INFO:hyperopt.tpe:tpe_transform took 0.003321 seconds
+INFO:hyperopt.tpe:TPE using 8/8 trials with best loss -0.792596
+INFO:hyperopt.tpe:tpe_transform took 0.003322 seconds
+INFO:hyperopt.tpe:TPE using 9/9 trials with best loss -0.792596
+INFO:hyperopt.tpe:tpe_transform took 0.003332 seconds
+INFO:hyperopt.tpe:TPE using 10/10 trials with best loss -0.792596
+INFO:hyperopt.tpe:tpe_transform took 0.003359 seconds
+INFO:hyperopt.tpe:TPE using 11/11 trials with best loss -0.792596
+INFO:hyperopt.tpe:tpe_transform took 0.003555 seconds
+INFO:hyperopt.tpe:TPE using 12/12 trials with best loss -0.792596
+INFO:hyperopt.tpe:tpe_transform took 0.003484 seconds
+INFO:hyperopt.tpe:TPE using 13/13 trials with best loss -0.792596
+INFO:hyperopt.tpe:tpe_transform took 0.003444 seconds
+INFO:hyperopt.tpe:TPE using 14/14 trials with best loss -0.792596
+INFO:hyperopt.tpe:tpe_transform took 0.003470 seconds
+INFO:hyperopt.tpe:TPE using 15/15 trials with best loss -0.804038
+INFO:hyperopt.tpe:tpe_transform took 0.003494 seconds
+INFO:hyperopt.tpe:TPE using 16/16 trials with best loss -0.804038
+INFO:hyperopt.tpe:tpe_transform took 0.003461 seconds
+INFO:hyperopt.tpe:TPE using 17/17 trials with best loss -0.804038
+INFO:hyperopt.tpe:tpe_transform took 0.003449 seconds
+INFO:hyperopt.tpe:TPE using 18/18 trials with best loss -0.804038
+INFO:hyperopt.tpe:tpe_transform took 0.003658 seconds
+INFO:hyperopt.tpe:TPE using 19/19 trials with best loss -0.804038
+INFO:root:xgb_cv start
+INFO:root:随机调参完成！
+INFO:root:随机调参最优参数存储于/Users/ying.xie/Documents/repositories/sublime_projects/ge/01_data/xgboost_params_hyperopt.json
+INFO:root:XGBoost模型使用经验参数建模
+INFO:root:XGB模型在参数已调整好后，使用全部TRAIN&TEST数据集建模
+INFO:root:param=={'max_depth': 2, 'min_samples_leaf ': 200, 'eta': 0.1, 'objective': 'binary:logistic', 'subsample': 0.8, 'colsample_bytree': 0.8, 'gamma': 0, 'silent': 0, 'eval_metric': 'auc', 'num_boost_round': 74}
+INFO:root:param=={'max_depth': 2, 'min_samples_leaf ': 200, 'eta': 0.1, 'objective': 'binary:logistic', 'subsample': 0.8, 'colsample_bytree': 0.8, 'gamma': 0, 'silent': 0, 'eval_metric': 'auc', 'num_boost_round': 74}
+INFO:root:param=={'max_depth': 2, 'min_samples_leaf ': 200, 'eta': 0.1, 'objective': 'binary:logistic', 'subsample': 0.8, 'colsample_bytree': 0.8, 'gamma': 0, 'silent': 0, 'eval_metric': 'auc', 'num_boost_round': 74}
+INFO:root:param=={'max_depth': 2, 'min_samples_leaf ': 200, 'eta': 0.1, 'objective': 'binary:logistic', 'subsample': 0.8, 'colsample_bytree': 0.8, 'gamma': 0, 'silent': 0, 'eval_metric': 'auc', 'num_boost_round': 74}
+INFO:root:param=={'max_depth': 2, 'min_samples_leaf ': 200, 'eta': 0.1, 'objective': 'binary:logistic', 'subsample': 0.8, 'colsample_bytree': 0.8, 'gamma': 0, 'silent': 0, 'eval_metric': 'auc', 'num_boost_round': 74}
+INFO:root:param=={'max_depth': 2, 'min_samples_leaf ': 200, 'eta': 0.1, 'objective': 'binary:logistic', 'subsample': 0.8, 'colsample_bytree': 0.8, 'gamma': 0, 'silent': 0, 'eval_metric': 'auc', 'num_boost_round': 74}
+INFO:root:
+        XGB 模型建模输出：
+        1. 模型文件，预测概率等存储于： /Users/ying.xie/Documents/repositories/sublime_projects/ge/01_data/demo_xgb_v2XGBExp模型结果.pkl
+        2. 模型变量重要性排序存储于：/Users/ying.xie/Documents/repositories/sublime_projects/ge/02_result/demo_xgb_v2XGBExp模型变量重要性排序.xlsx
+        
+INFO:root:XGBoost模型使用Hyperopt调参所选最优参数建模
+INFO:root:XGB模型在参数已调整好后，使用全部TRAIN&TEST数据集建模
+INFO:root:param=={'colsample_bytree': 0.31198348046681335, 'gamma': 0.11188385491963569, 'learning_rate': 0.06497995023054046, 'max_depth': 1, 'min_child_weight': 2, 'n_estimators': 178, 'reg_alpha': 0.44216762379163455, 'scale_pos_weight': 2, 'subsample': 0.5, 'eval_metric': 'auc', 'objective': 'binary:logistic', 'num_boost_round': 132}
+INFO:root:param=={'colsample_bytree': 0.31198348046681335, 'gamma': 0.11188385491963569, 'learning_rate': 0.06497995023054046, 'max_depth': 1, 'min_child_weight': 2, 'n_estimators': 178, 'reg_alpha': 0.44216762379163455, 'scale_pos_weight': 2, 'subsample': 0.5, 'eval_metric': 'auc', 'objective': 'binary:logistic', 'num_boost_round': 132}
+INFO:root:param=={'colsample_bytree': 0.31198348046681335, 'gamma': 0.11188385491963569, 'learning_rate': 0.06497995023054046, 'max_depth': 1, 'min_child_weight': 2, 'n_estimators': 178, 'reg_alpha': 0.44216762379163455, 'scale_pos_weight': 2, 'subsample': 0.5, 'eval_metric': 'auc', 'objective': 'binary:logistic', 'num_boost_round': 132}
+INFO:root:param=={'colsample_bytree': 0.31198348046681335, 'gamma': 0.11188385491963569, 'learning_rate': 0.06497995023054046, 'max_depth': 1, 'min_child_weight': 2, 'n_estimators': 178, 'reg_alpha': 0.44216762379163455, 'scale_pos_weight': 2, 'subsample': 0.5, 'eval_metric': 'auc', 'objective': 'binary:logistic', 'num_boost_round': 132}
+INFO:root:param=={'colsample_bytree': 0.31198348046681335, 'gamma': 0.11188385491963569, 'learning_rate': 0.06497995023054046, 'max_depth': 1, 'min_child_weight': 2, 'n_estimators': 178, 'reg_alpha': 0.44216762379163455, 'scale_pos_weight': 2, 'subsample': 0.5, 'eval_metric': 'auc', 'objective': 'binary:logistic', 'num_boost_round': 132}
+INFO:root:param=={'colsample_bytree': 0.31198348046681335, 'gamma': 0.11188385491963569, 'learning_rate': 0.06497995023054046, 'max_depth': 1, 'min_child_weight': 2, 'n_estimators': 178, 'reg_alpha': 0.44216762379163455, 'scale_pos_weight': 2, 'subsample': 0.5, 'eval_metric': 'auc', 'objective': 'binary:logistic', 'num_boost_round': 132}
+INFO:root:
+        XGB 模型建模输出：
+        1. 模型文件，预测概率等存储于： /Users/ying.xie/Documents/repositories/sublime_projects/ge/01_data/demo_xgb_v2XGBHyperopt模型结果.pkl
+        2. 模型变量重要性排序存储于：/Users/ying.xie/Documents/repositories/sublime_projects/ge/02_result/demo_xgb_v2XGBHyperopt模型变量重要性排序.xlsx
+        
+INFO:root:xgb_cv start
+INFO:root:XGB建模经排序选择变量更新于/Users/ying.xie/Documents/repositories/sublime_projects/ge/02_result/variable_filter.json
+INFO:root:XGB建模排序选择排序存储于/Users/ying.xie/Documents/repositories/sublime_projects/ge/02_result/xgb_select_rank.xlsx
+INFO:root:xgb_cv start
+INFO:root:经验参数存储于/Users/ying.xie/Documents/repositories/sublime_projects/ge/01_data/xgboost_params_experience.json
+INFO:root:开始超参调参
+INFO:hyperopt.tpe:tpe_transform took 0.003623 seconds
+INFO:hyperopt.tpe:TPE using 0 trials
+INFO:hyperopt.tpe:tpe_transform took 0.003337 seconds
+INFO:hyperopt.tpe:TPE using 1/1 trials with best loss -0.766731
+INFO:hyperopt.tpe:tpe_transform took 0.004014 seconds
+INFO:hyperopt.tpe:TPE using 2/2 trials with best loss -0.774519
+INFO:hyperopt.tpe:tpe_transform took 0.003358 seconds
+INFO:hyperopt.tpe:TPE using 3/3 trials with best loss -0.785385
+INFO:hyperopt.tpe:tpe_transform took 0.003473 seconds
+INFO:hyperopt.tpe:TPE using 4/4 trials with best loss -0.785385
+INFO:hyperopt.tpe:tpe_transform took 0.003324 seconds
+INFO:hyperopt.tpe:TPE using 5/5 trials with best loss -0.785385
+INFO:hyperopt.tpe:tpe_transform took 0.003336 seconds
+INFO:hyperopt.tpe:TPE using 6/6 trials with best loss -0.785385
+INFO:hyperopt.tpe:tpe_transform took 0.003332 seconds
+INFO:hyperopt.tpe:TPE using 7/7 trials with best loss -0.785385
+INFO:hyperopt.tpe:tpe_transform took 0.003475 seconds
+INFO:hyperopt.tpe:TPE using 8/8 trials with best loss -0.785385
+INFO:hyperopt.tpe:tpe_transform took 0.003324 seconds
+INFO:hyperopt.tpe:TPE using 9/9 trials with best loss -0.785385
+INFO:hyperopt.tpe:tpe_transform took 0.003489 seconds
+INFO:hyperopt.tpe:TPE using 10/10 trials with best loss -0.785385
+INFO:hyperopt.tpe:tpe_transform took 0.010820 seconds
+INFO:hyperopt.tpe:TPE using 11/11 trials with best loss -0.785385
+INFO:hyperopt.tpe:tpe_transform took 0.003544 seconds
+INFO:hyperopt.tpe:TPE using 12/12 trials with best loss -0.785385
+INFO:hyperopt.tpe:tpe_transform took 0.003337 seconds
+INFO:hyperopt.tpe:TPE using 13/13 trials with best loss -0.785385
+INFO:hyperopt.tpe:tpe_transform took 0.003364 seconds
+INFO:hyperopt.tpe:TPE using 14/14 trials with best loss -0.785385
+INFO:hyperopt.tpe:tpe_transform took 0.003323 seconds
+INFO:hyperopt.tpe:TPE using 15/15 trials with best loss -0.785385
+INFO:hyperopt.tpe:tpe_transform took 0.003499 seconds
+INFO:hyperopt.tpe:TPE using 16/16 trials with best loss -0.785385
+INFO:hyperopt.tpe:tpe_transform took 0.003327 seconds
+INFO:hyperopt.tpe:TPE using 17/17 trials with best loss -0.795673
+INFO:hyperopt.tpe:tpe_transform took 0.003414 seconds
+INFO:hyperopt.tpe:TPE using 18/18 trials with best loss -0.795673
+INFO:hyperopt.tpe:tpe_transform took 0.003414 seconds
+INFO:hyperopt.tpe:TPE using 19/19 trials with best loss -0.796058
+INFO:root:xgb_cv start
+INFO:root:随机调参完成！
+INFO:root:xgb_cv start
+INFO:root:XGB建模经排序选择变量更新于/Users/ying.xie/Documents/repositories/sublime_projects/ge/02_result/variable_filter.json
+INFO:root:XGB建模排序选择排序存储于/Users/ying.xie/Documents/repositories/sublime_projects/ge/02_result/xgb_select_rank.xlsx
+INFO:root:xgb_cv start
+INFO:root:经验参数存储于/Users/ying.xie/Documents/repositories/sublime_projects/ge/01_data/xgboost_params_experience.json
+INFO:root:开始Hyperopt超参调参
+INFO:hyperopt.tpe:tpe_transform took 0.004109 seconds
+INFO:hyperopt.tpe:TPE using 0 trials
+INFO:hyperopt.tpe:tpe_transform took 0.003388 seconds
+INFO:hyperopt.tpe:TPE using 1/1 trials with best loss -0.760288
+INFO:hyperopt.tpe:tpe_transform took 0.003354 seconds
+INFO:hyperopt.tpe:TPE using 2/2 trials with best loss -0.760288
+INFO:hyperopt.tpe:tpe_transform took 0.003499 seconds
+INFO:hyperopt.tpe:TPE using 3/3 trials with best loss -0.760288
+INFO:hyperopt.tpe:tpe_transform took 0.003312 seconds
+INFO:hyperopt.tpe:TPE using 4/4 trials with best loss -0.760288
+INFO:hyperopt.tpe:tpe_transform took 0.003484 seconds
+INFO:hyperopt.tpe:TPE using 5/5 trials with best loss -0.760288
+INFO:hyperopt.tpe:tpe_transform took 0.003320 seconds
+INFO:hyperopt.tpe:TPE using 6/6 trials with best loss -0.760288
+INFO:hyperopt.tpe:tpe_transform took 0.003420 seconds
+INFO:hyperopt.tpe:TPE using 7/7 trials with best loss -0.760288
+INFO:hyperopt.tpe:tpe_transform took 0.003334 seconds
+INFO:hyperopt.tpe:TPE using 8/8 trials with best loss -0.760288
+INFO:hyperopt.tpe:tpe_transform took 0.003369 seconds
+INFO:hyperopt.tpe:TPE using 9/9 trials with best loss -0.760288
+INFO:hyperopt.tpe:tpe_transform took 0.003448 seconds
+INFO:hyperopt.tpe:TPE using 10/10 trials with best loss -0.768173
+INFO:hyperopt.tpe:tpe_transform took 0.003336 seconds
+INFO:hyperopt.tpe:TPE using 11/11 trials with best loss -0.811827
+INFO:hyperopt.tpe:tpe_transform took 0.003383 seconds
+INFO:hyperopt.tpe:TPE using 12/12 trials with best loss -0.811827
+INFO:hyperopt.tpe:tpe_transform took 0.003368 seconds
+INFO:hyperopt.tpe:TPE using 13/13 trials with best loss -0.811827
+INFO:hyperopt.tpe:tpe_transform took 0.003335 seconds
+INFO:hyperopt.tpe:TPE using 14/14 trials with best loss -0.811827
+INFO:hyperopt.tpe:tpe_transform took 0.003325 seconds
+INFO:hyperopt.tpe:TPE using 15/15 trials with best loss -0.811827
+INFO:hyperopt.tpe:tpe_transform took 0.003526 seconds
+INFO:hyperopt.tpe:TPE using 16/16 trials with best loss -0.811827
+INFO:hyperopt.tpe:tpe_transform took 0.003338 seconds
+INFO:hyperopt.tpe:TPE using 17/17 trials with best loss -0.811827
+INFO:hyperopt.tpe:tpe_transform took 0.003354 seconds
+INFO:hyperopt.tpe:TPE using 18/18 trials with best loss -0.811827
+INFO:hyperopt.tpe:tpe_transform took 0.004060 seconds
+INFO:hyperopt.tpe:TPE using 19/19 trials with best loss -0.811827
+INFO:root:xgb_cv start
+INFO:root:Hyperopt调参完成！
+INFO:root:<class 'dict'>
+INFO:root:xgb_cv start
+INFO:root:XGB建模经排序选择变量更新于/Users/ying.xie/Documents/repositories/sublime_projects/ge/02_result/variable_filter.json
+INFO:root:XGB建模排序选择排序存储于/Users/ying.xie/Documents/repositories/sublime_projects/ge/02_result/xgb_select_rank.xlsx
+INFO:root:xgb_cv start
+INFO:root:经验参数存储于/Users/ying.xie/Documents/repositories/sublime_projects/ge/01_data/xgboost_params_experience.json
+INFO:root:开始Hyperopt超参调参
+INFO:hyperopt.tpe:tpe_transform took 0.003341 seconds
+INFO:hyperopt.tpe:TPE using 0 trials
+INFO:hyperopt.tpe:tpe_transform took 0.003488 seconds
+INFO:hyperopt.tpe:TPE using 1/1 trials with best loss -0.741058
+INFO:hyperopt.tpe:tpe_transform took 0.003339 seconds
+INFO:hyperopt.tpe:TPE using 2/2 trials with best loss -0.745192
+INFO:hyperopt.tpe:tpe_transform took 0.003393 seconds
+INFO:hyperopt.tpe:TPE using 3/3 trials with best loss -0.782212
+INFO:hyperopt.tpe:tpe_transform took 0.003453 seconds
+INFO:hyperopt.tpe:TPE using 4/4 trials with best loss -0.787596
+INFO:hyperopt.tpe:tpe_transform took 0.003328 seconds
+INFO:hyperopt.tpe:TPE using 5/5 trials with best loss -0.787596
+INFO:hyperopt.tpe:tpe_transform took 0.003309 seconds
+INFO:hyperopt.tpe:TPE using 6/6 trials with best loss -0.787596
+INFO:hyperopt.tpe:tpe_transform took 0.003421 seconds
+INFO:hyperopt.tpe:TPE using 7/7 trials with best loss -0.787596
+INFO:hyperopt.tpe:tpe_transform took 0.003374 seconds
+INFO:hyperopt.tpe:TPE using 8/8 trials with best loss -0.789808
+INFO:hyperopt.tpe:tpe_transform took 0.003355 seconds
+INFO:hyperopt.tpe:TPE using 9/9 trials with best loss -0.789808
+INFO:hyperopt.tpe:tpe_transform took 0.003780 seconds
+INFO:hyperopt.tpe:TPE using 10/10 trials with best loss -0.789808
+INFO:hyperopt.tpe:tpe_transform took 0.003352 seconds
+INFO:hyperopt.tpe:TPE using 11/11 trials with best loss -0.789808
+INFO:hyperopt.tpe:tpe_transform took 0.003701 seconds
+INFO:hyperopt.tpe:TPE using 12/12 trials with best loss -0.789808
+INFO:hyperopt.tpe:tpe_transform took 0.003356 seconds
+INFO:hyperopt.tpe:TPE using 13/13 trials with best loss -0.789808
+INFO:hyperopt.tpe:tpe_transform took 0.003362 seconds
+INFO:hyperopt.tpe:TPE using 14/14 trials with best loss -0.789808
+INFO:hyperopt.tpe:tpe_transform took 0.003334 seconds
+INFO:hyperopt.tpe:TPE using 15/15 trials with best loss -0.797308
+INFO:hyperopt.tpe:tpe_transform took 0.003332 seconds
+INFO:hyperopt.tpe:TPE using 16/16 trials with best loss -0.797308
+INFO:hyperopt.tpe:tpe_transform took 0.003321 seconds
+INFO:hyperopt.tpe:TPE using 17/17 trials with best loss -0.797308
+INFO:hyperopt.tpe:tpe_transform took 0.003317 seconds
+INFO:hyperopt.tpe:TPE using 18/18 trials with best loss -0.797308
+INFO:hyperopt.tpe:tpe_transform took 0.003362 seconds
+INFO:hyperopt.tpe:TPE using 19/19 trials with best loss -0.797308
+INFO:root:xgb_cv start
+INFO:root:Hyperopt调参完成！
+INFO:root:{'colsample_bytree': 0.34352779150857304, 'gamma': 0.10208161464024697, 'learning_rate': 0.12527440514201038, 'max_depth': 3, 'min_child_weight': 4, 'n_estimators': 152, 'reg_alpha': 0.007007195689599205, 'scale_pos_weight': 3, 'subsample': 0.5, 'eval_metric': 'auc', 'objective': 'binary:logistic', 'num_boost_round': 70}
+INFO:root:xgb_cv start
+INFO:root:XGB建模经排序选择变量更新于/Users/ying.xie/Documents/repositories/sublime_projects/ge/02_result/variable_filter.json
+INFO:root:XGB建模排序选择排序存储于/Users/ying.xie/Documents/repositories/sublime_projects/ge/02_result/xgb_select_rank.xlsx
+INFO:root:xgb_cv start
+INFO:root:经验参数存储于/Users/ying.xie/Documents/repositories/sublime_projects/ge/01_data/xgboost_params_experience.json
+INFO:root:开始Hyperopt超参调参
+INFO:hyperopt.tpe:tpe_transform took 0.004982 seconds
+INFO:hyperopt.tpe:TPE using 0 trials
+INFO:hyperopt.tpe:tpe_transform took 0.043260 seconds
+INFO:hyperopt.tpe:TPE using 1/1 trials with best loss -0.743173
+INFO:hyperopt.tpe:tpe_transform took 0.003382 seconds
+INFO:hyperopt.tpe:TPE using 2/2 trials with best loss -0.761250
+INFO:hyperopt.tpe:tpe_transform took 0.004835 seconds
+INFO:hyperopt.tpe:TPE using 3/3 trials with best loss -0.800481
+INFO:hyperopt.tpe:tpe_transform took 0.003354 seconds
+INFO:hyperopt.tpe:TPE using 4/4 trials with best loss -0.800481
+INFO:hyperopt.tpe:tpe_transform took 0.003346 seconds
+INFO:hyperopt.tpe:TPE using 5/5 trials with best loss -0.800481
+INFO:hyperopt.tpe:tpe_transform took 0.003458 seconds
+INFO:hyperopt.tpe:TPE using 6/6 trials with best loss -0.800481
+INFO:hyperopt.tpe:tpe_transform took 0.003636 seconds
+INFO:hyperopt.tpe:TPE using 7/7 trials with best loss -0.800481
+INFO:hyperopt.tpe:tpe_transform took 0.003414 seconds
+INFO:hyperopt.tpe:TPE using 8/8 trials with best loss -0.800481
+INFO:hyperopt.tpe:tpe_transform took 0.003354 seconds
+INFO:hyperopt.tpe:TPE using 9/9 trials with best loss -0.800481
+INFO:hyperopt.tpe:tpe_transform took 0.003366 seconds
+INFO:hyperopt.tpe:TPE using 10/10 trials with best loss -0.800481
+INFO:hyperopt.tpe:tpe_transform took 0.003411 seconds
+INFO:hyperopt.tpe:TPE using 11/11 trials with best loss -0.800481
+INFO:hyperopt.tpe:tpe_transform took 0.004139 seconds
+INFO:hyperopt.tpe:TPE using 12/12 trials with best loss -0.800481
+INFO:hyperopt.tpe:tpe_transform took 0.003431 seconds
+INFO:hyperopt.tpe:TPE using 13/13 trials with best loss -0.800481
+INFO:hyperopt.tpe:tpe_transform took 0.003495 seconds
+INFO:hyperopt.tpe:TPE using 14/14 trials with best loss -0.800481
+INFO:hyperopt.tpe:tpe_transform took 0.003669 seconds
+INFO:hyperopt.tpe:TPE using 15/15 trials with best loss -0.800481
+INFO:hyperopt.tpe:tpe_transform took 0.003500 seconds
+INFO:hyperopt.tpe:TPE using 16/16 trials with best loss -0.800481
+INFO:hyperopt.tpe:tpe_transform took 0.003658 seconds
+INFO:hyperopt.tpe:TPE using 17/17 trials with best loss -0.800481
+INFO:hyperopt.tpe:tpe_transform took 0.003477 seconds
+INFO:hyperopt.tpe:TPE using 18/18 trials with best loss -0.800481
+INFO:hyperopt.tpe:tpe_transform took 0.003558 seconds
+INFO:hyperopt.tpe:TPE using 19/19 trials with best loss -0.800481
+INFO:root:xgb_cv start
+INFO:root:Hyperopt调参完成！
+INFO:root:xgb_cv start
+INFO:root:XGB建模经排序选择变量更新于/Users/ying.xie/Documents/repositories/sublime_projects/ge/02_result/variable_filter.json
+INFO:root:XGB建模排序选择排序存储于/Users/ying.xie/Documents/repositories/sublime_projects/ge/02_result/xgb_select_rank.xlsx
+INFO:root:xgb_cv start
+INFO:root:经验参数存储于/Users/ying.xie/Documents/repositories/sublime_projects/ge/01_data/xgboost_params_experience.json
+INFO:root:开始Hyperopt超参调参
+INFO:hyperopt.tpe:tpe_transform took 0.004538 seconds
+INFO:hyperopt.tpe:TPE using 0 trials
+INFO:hyperopt.tpe:tpe_transform took 0.004064 seconds
+INFO:hyperopt.tpe:TPE using 1/1 trials with best loss -0.760481
+INFO:hyperopt.tpe:tpe_transform took 0.003407 seconds
+INFO:hyperopt.tpe:TPE using 2/2 trials with best loss -0.777788
+INFO:hyperopt.tpe:tpe_transform took 0.003344 seconds
+INFO:hyperopt.tpe:TPE using 3/3 trials with best loss -0.777788
+INFO:hyperopt.tpe:tpe_transform took 0.003441 seconds
+INFO:hyperopt.tpe:TPE using 4/4 trials with best loss -0.777788
+INFO:hyperopt.tpe:tpe_transform took 0.005149 seconds
+INFO:hyperopt.tpe:TPE using 5/5 trials with best loss -0.777788
+INFO:hyperopt.tpe:tpe_transform took 0.004375 seconds
+INFO:hyperopt.tpe:TPE using 6/6 trials with best loss -0.777788
+INFO:hyperopt.tpe:tpe_transform took 0.003422 seconds
+INFO:hyperopt.tpe:TPE using 7/7 trials with best loss -0.777788
+INFO:hyperopt.tpe:tpe_transform took 0.003402 seconds
+INFO:hyperopt.tpe:TPE using 8/8 trials with best loss -0.777788
+INFO:hyperopt.tpe:tpe_transform took 0.003466 seconds
+INFO:hyperopt.tpe:TPE using 9/9 trials with best loss -0.777788
+INFO:hyperopt.tpe:tpe_transform took 0.003421 seconds
+INFO:hyperopt.tpe:TPE using 10/10 trials with best loss -0.777788
+INFO:hyperopt.tpe:tpe_transform took 0.003722 seconds
+INFO:hyperopt.tpe:TPE using 11/11 trials with best loss -0.783365
+INFO:hyperopt.tpe:tpe_transform took 0.003514 seconds
+INFO:hyperopt.tpe:TPE using 12/12 trials with best loss -0.783365
+INFO:hyperopt.tpe:tpe_transform took 0.003466 seconds
+INFO:hyperopt.tpe:TPE using 13/13 trials with best loss -0.783365
+INFO:hyperopt.tpe:tpe_transform took 0.003462 seconds
+INFO:hyperopt.tpe:TPE using 14/14 trials with best loss -0.786538
+INFO:hyperopt.tpe:tpe_transform took 0.003436 seconds
+INFO:hyperopt.tpe:TPE using 15/15 trials with best loss -0.786538
+INFO:hyperopt.tpe:tpe_transform took 0.006082 seconds
+INFO:hyperopt.tpe:TPE using 16/16 trials with best loss -0.795962
+INFO:hyperopt.tpe:tpe_transform took 0.005433 seconds
+INFO:hyperopt.tpe:TPE using 17/17 trials with best loss -0.795962
+INFO:hyperopt.tpe:tpe_transform took 0.003856 seconds
+INFO:hyperopt.tpe:TPE using 18/18 trials with best loss -0.801923
+INFO:hyperopt.tpe:tpe_transform took 0.003469 seconds
+INFO:hyperopt.tpe:TPE using 19/19 trials with best loss -0.801923
+INFO:root:xgb_cv start
+INFO:root:Hyperopt调参完成！
+INFO:root:xgb_cv start
+INFO:root:XGB建模经排序选择变量更新于/Users/ying.xie/Documents/repositories/sublime_projects/ge/02_result/variable_filter.json
+INFO:root:XGB建模排序选择排序存储于/Users/ying.xie/Documents/repositories/sublime_projects/ge/02_result/xgb_select_rank.xlsx
+INFO:root:xgb_cv start
+INFO:root:经验参数存储于/Users/ying.xie/Documents/repositories/sublime_projects/ge/01_data/xgboost_params_experience.json
+INFO:root:开始Hyperopt超参调参
+INFO:hyperopt.tpe:tpe_transform took 0.004507 seconds
+INFO:hyperopt.tpe:TPE using 0 trials
+INFO:hyperopt.tpe:tpe_transform took 0.003333 seconds
+INFO:hyperopt.tpe:TPE using 1/1 trials with best loss -0.757308
+INFO:hyperopt.tpe:tpe_transform took 0.003303 seconds
+INFO:hyperopt.tpe:TPE using 2/2 trials with best loss -0.775769
+INFO:hyperopt.tpe:tpe_transform took 0.003372 seconds
+INFO:hyperopt.tpe:TPE using 3/3 trials with best loss -0.775769
+INFO:hyperopt.tpe:tpe_transform took 0.003318 seconds
+INFO:hyperopt.tpe:TPE using 4/4 trials with best loss -0.775769
+INFO:hyperopt.tpe:tpe_transform took 0.003588 seconds
+INFO:hyperopt.tpe:TPE using 5/5 trials with best loss -0.775769
+INFO:hyperopt.tpe:tpe_transform took 0.003597 seconds
+INFO:hyperopt.tpe:TPE using 6/6 trials with best loss -0.775769
+INFO:hyperopt.tpe:tpe_transform took 0.003321 seconds
+INFO:hyperopt.tpe:TPE using 7/7 trials with best loss -0.775769
+INFO:hyperopt.tpe:tpe_transform took 0.003318 seconds
+INFO:hyperopt.tpe:TPE using 8/8 trials with best loss -0.775769
+INFO:hyperopt.tpe:tpe_transform took 0.005014 seconds
+INFO:hyperopt.tpe:TPE using 9/9 trials with best loss -0.775769
+INFO:hyperopt.tpe:tpe_transform took 0.003402 seconds
+INFO:hyperopt.tpe:TPE using 10/10 trials with best loss -0.775769
+INFO:hyperopt.tpe:tpe_transform took 0.003571 seconds
+INFO:hyperopt.tpe:TPE using 11/11 trials with best loss -0.790000
+INFO:hyperopt.tpe:tpe_transform took 0.006943 seconds
+INFO:hyperopt.tpe:TPE using 12/12 trials with best loss -0.790000
+INFO:hyperopt.tpe:tpe_transform took 0.003853 seconds
+INFO:hyperopt.tpe:TPE using 13/13 trials with best loss -0.790000
+INFO:hyperopt.tpe:tpe_transform took 0.006592 seconds
+INFO:hyperopt.tpe:TPE using 14/14 trials with best loss -0.790000
+INFO:hyperopt.tpe:tpe_transform took 0.003887 seconds
+INFO:hyperopt.tpe:TPE using 15/15 trials with best loss -0.790000
+INFO:hyperopt.tpe:tpe_transform took 0.004799 seconds
+INFO:hyperopt.tpe:TPE using 16/16 trials with best loss -0.790000
+INFO:hyperopt.tpe:tpe_transform took 0.003576 seconds
+INFO:hyperopt.tpe:TPE using 17/17 trials with best loss -0.790000
+INFO:hyperopt.tpe:tpe_transform took 0.004490 seconds
+INFO:hyperopt.tpe:TPE using 18/18 trials with best loss -0.792308
+INFO:hyperopt.tpe:tpe_transform took 0.004035 seconds
+INFO:hyperopt.tpe:TPE using 19/19 trials with best loss -0.792308
+INFO:root:xgb_cv start
+INFO:root:Hyperopt调参完成！
+INFO:root:xgb_cv start
+INFO:root:XGB建模经排序选择变量更新于/Users/ying.xie/Documents/repositories/sublime_projects/ge/02_result/variable_filter.json
+INFO:root:XGB建模排序选择排序存储于/Users/ying.xie/Documents/repositories/sublime_projects/ge/02_result/xgb_select_rank.xlsx
+INFO:root:xgb_cv start
+INFO:root:经验参数存储于/Users/ying.xie/Documents/repositories/sublime_projects/ge/01_data/xgboost_params_experience.json
+INFO:root:开始Hyperopt超参调参
+INFO:hyperopt.tpe:tpe_transform took 0.005583 seconds
+INFO:hyperopt.tpe:TPE using 0 trials
+INFO:hyperopt.tpe:tpe_transform took 0.004066 seconds
+INFO:hyperopt.tpe:TPE using 1/1 trials with best loss -0.740096
+INFO:hyperopt.tpe:tpe_transform took 0.004105 seconds
+INFO:hyperopt.tpe:TPE using 2/2 trials with best loss -0.741827
+INFO:hyperopt.tpe:tpe_transform took 0.004960 seconds
+INFO:hyperopt.tpe:TPE using 3/3 trials with best loss -0.741827
+INFO:hyperopt.tpe:tpe_transform took 0.003410 seconds
+INFO:hyperopt.tpe:TPE using 4/4 trials with best loss -0.741827
+INFO:hyperopt.tpe:tpe_transform took 0.003330 seconds
+INFO:hyperopt.tpe:TPE using 5/5 trials with best loss -0.741827
+INFO:hyperopt.tpe:tpe_transform took 0.004523 seconds
+INFO:hyperopt.tpe:TPE using 6/6 trials with best loss -0.741827
+INFO:hyperopt.tpe:tpe_transform took 0.003570 seconds
+INFO:hyperopt.tpe:TPE using 7/7 trials with best loss -0.777981
+INFO:hyperopt.tpe:tpe_transform took 0.010668 seconds
+INFO:hyperopt.tpe:TPE using 8/8 trials with best loss -0.777981
+INFO:hyperopt.tpe:tpe_transform took 0.003857 seconds
+INFO:hyperopt.tpe:TPE using 9/9 trials with best loss -0.777981
+INFO:hyperopt.tpe:tpe_transform took 0.003585 seconds
+INFO:hyperopt.tpe:TPE using 10/10 trials with best loss -0.777981
+INFO:hyperopt.tpe:tpe_transform took 0.003335 seconds
+INFO:hyperopt.tpe:TPE using 11/11 trials with best loss -0.777981
+INFO:hyperopt.tpe:tpe_transform took 0.003354 seconds
+INFO:hyperopt.tpe:TPE using 12/12 trials with best loss -0.777981
+INFO:hyperopt.tpe:tpe_transform took 0.003452 seconds
+INFO:hyperopt.tpe:TPE using 13/13 trials with best loss -0.777981
+INFO:hyperopt.tpe:tpe_transform took 0.003382 seconds
+INFO:hyperopt.tpe:TPE using 14/14 trials with best loss -0.777981
+INFO:hyperopt.tpe:tpe_transform took 0.003778 seconds
+INFO:hyperopt.tpe:TPE using 15/15 trials with best loss -0.777981
+INFO:hyperopt.tpe:tpe_transform took 0.004450 seconds
+INFO:hyperopt.tpe:TPE using 16/16 trials with best loss -0.777981
+INFO:hyperopt.tpe:tpe_transform took 0.003428 seconds
+INFO:hyperopt.tpe:TPE using 17/17 trials with best loss -0.788846
+INFO:hyperopt.tpe:tpe_transform took 0.003342 seconds
+INFO:hyperopt.tpe:TPE using 18/18 trials with best loss -0.788846
+INFO:hyperopt.tpe:tpe_transform took 0.003814 seconds
+INFO:hyperopt.tpe:TPE using 19/19 trials with best loss -0.788846
+INFO:root:xgb_cv start
+INFO:root:Hyperopt调参完成！
+INFO:root:xgb_cv start
+INFO:root:XGB建模经排序选择变量更新于/Users/ying.xie/Documents/repositories/sublime_projects/ge/02_result/variable_filter.json
+INFO:root:XGB建模排序选择排序存储于/Users/ying.xie/Documents/repositories/sublime_projects/ge/02_result/xgb_select_rank.xlsx
+INFO:root:xgb_cv start
+INFO:root:经验参数存储于/Users/ying.xie/Documents/repositories/sublime_projects/ge/01_data/xgboost_params_experience.json
+INFO:root:开始Hyperopt超参调参
+INFO:hyperopt.tpe:tpe_transform took 0.003648 seconds
+INFO:hyperopt.tpe:TPE using 0 trials
+INFO:hyperopt.tpe:tpe_transform took 0.003791 seconds
+INFO:hyperopt.tpe:TPE using 1/1 trials with best loss -0.500000
+INFO:hyperopt.tpe:tpe_transform took 0.003345 seconds
+INFO:hyperopt.tpe:TPE using 2/2 trials with best loss -0.500000
+INFO:hyperopt.tpe:tpe_transform took 0.004714 seconds
+INFO:hyperopt.tpe:TPE using 3/3 trials with best loss -0.747404
+INFO:hyperopt.tpe:tpe_transform took 0.003328 seconds
+INFO:hyperopt.tpe:TPE using 4/4 trials with best loss -0.747788
+INFO:hyperopt.tpe:tpe_transform took 0.003787 seconds
+INFO:hyperopt.tpe:TPE using 5/5 trials with best loss -0.747788
+INFO:hyperopt.tpe:tpe_transform took 0.003825 seconds
+INFO:hyperopt.tpe:TPE using 6/6 trials with best loss -0.752788
+INFO:hyperopt.tpe:tpe_transform took 0.004716 seconds
+INFO:hyperopt.tpe:TPE using 7/7 trials with best loss -0.752788
+INFO:hyperopt.tpe:tpe_transform took 0.004316 seconds
+INFO:hyperopt.tpe:TPE using 8/8 trials with best loss -0.752788
+INFO:hyperopt.tpe:tpe_transform took 0.004289 seconds
+INFO:hyperopt.tpe:TPE using 9/9 trials with best loss -0.752788
+INFO:hyperopt.tpe:tpe_transform took 0.003456 seconds
+INFO:hyperopt.tpe:TPE using 10/10 trials with best loss -0.752788
+INFO:hyperopt.tpe:tpe_transform took 0.003539 seconds
+INFO:hyperopt.tpe:TPE using 11/11 trials with best loss -0.752788
+INFO:hyperopt.tpe:tpe_transform took 0.003811 seconds
+INFO:hyperopt.tpe:TPE using 12/12 trials with best loss -0.759038
+INFO:hyperopt.tpe:tpe_transform took 0.004057 seconds
+INFO:hyperopt.tpe:TPE using 13/13 trials with best loss -0.759038
+INFO:hyperopt.tpe:tpe_transform took 0.003900 seconds
+INFO:hyperopt.tpe:TPE using 14/14 trials with best loss -0.759038
+INFO:hyperopt.tpe:tpe_transform took 0.003380 seconds
+INFO:hyperopt.tpe:TPE using 15/15 trials with best loss -0.759038
+INFO:hyperopt.tpe:tpe_transform took 0.003337 seconds
+INFO:hyperopt.tpe:TPE using 16/16 trials with best loss -0.759038
+INFO:hyperopt.tpe:tpe_transform took 0.003342 seconds
+INFO:hyperopt.tpe:TPE using 17/17 trials with best loss -0.759038
+INFO:hyperopt.tpe:tpe_transform took 0.003335 seconds
+INFO:hyperopt.tpe:TPE using 18/18 trials with best loss -0.759038
+INFO:hyperopt.tpe:tpe_transform took 0.003346 seconds
+INFO:hyperopt.tpe:TPE using 19/19 trials with best loss -0.759038
+INFO:root:xgb_cv start
+INFO:root:Hyperopt调参完成！
+INFO:root:Hyperopt最优参数存储于/Users/ying.xie/Documents/repositories/sublime_projects/ge/01_data/xgboost_params_hyperopt.json
+INFO:root:XGBoost模型使用经验参数建模
+INFO:root:XGB模型在参数已调整好后，使用全部TRAIN&TEST数据集建模
+INFO:root:param=={'max_depth': 2, 'min_samples_leaf ': 200, 'eta': 0.1, 'objective': 'binary:logistic', 'subsample': 0.8, 'colsample_bytree': 0.8, 'gamma': 0, 'silent': 0, 'eval_metric': 'auc', 'num_boost_round': 80}
+INFO:root:param=={'max_depth': 2, 'min_samples_leaf ': 200, 'eta': 0.1, 'objective': 'binary:logistic', 'subsample': 0.8, 'colsample_bytree': 0.8, 'gamma': 0, 'silent': 0, 'eval_metric': 'auc', 'num_boost_round': 80}
+INFO:root:param=={'max_depth': 2, 'min_samples_leaf ': 200, 'eta': 0.1, 'objective': 'binary:logistic', 'subsample': 0.8, 'colsample_bytree': 0.8, 'gamma': 0, 'silent': 0, 'eval_metric': 'auc', 'num_boost_round': 80}
+INFO:root:param=={'max_depth': 2, 'min_samples_leaf ': 200, 'eta': 0.1, 'objective': 'binary:logistic', 'subsample': 0.8, 'colsample_bytree': 0.8, 'gamma': 0, 'silent': 0, 'eval_metric': 'auc', 'num_boost_round': 80}
+INFO:root:param=={'max_depth': 2, 'min_samples_leaf ': 200, 'eta': 0.1, 'objective': 'binary:logistic', 'subsample': 0.8, 'colsample_bytree': 0.8, 'gamma': 0, 'silent': 0, 'eval_metric': 'auc', 'num_boost_round': 80}
+INFO:root:param=={'max_depth': 2, 'min_samples_leaf ': 200, 'eta': 0.1, 'objective': 'binary:logistic', 'subsample': 0.8, 'colsample_bytree': 0.8, 'gamma': 0, 'silent': 0, 'eval_metric': 'auc', 'num_boost_round': 80}
+INFO:root:
+        XGB 模型建模输出：
+        1. 模型文件，预测概率等存储于： /Users/ying.xie/Documents/repositories/sublime_projects/ge/01_data/demo_xgb_v2XGBExp模型结果.pkl
+        2. 模型变量重要性排序存储于：/Users/ying.xie/Documents/repositories/sublime_projects/ge/02_result/demo_xgb_v2XGBExp模型变量重要性排序.xlsx
+        
+INFO:root:XGBoost模型使用Hyperopt调参所选最优参数建模
+INFO:root:XGB模型在参数已调整好后，使用全部TRAIN&TEST数据集建模
+INFO:root:param=={'colsample_bytree': 0.3173616882941521, 'gamma': 0.05446584591715284, 'learning_rate': 0.08816411599599212, 'max_depth': 1, 'min_child_weight': 1, 'n_estimators': 27, 'reg_alpha': 0.0022788046913440746, 'scale_pos_weight': 6, 'subsample': 0.9, 'eval_metric': 'auc', 'objective': 'binary:logistic', 'num_boost_round': 71}
+INFO:root:param=={'colsample_bytree': 0.3173616882941521, 'gamma': 0.05446584591715284, 'learning_rate': 0.08816411599599212, 'max_depth': 1, 'min_child_weight': 1, 'n_estimators': 27, 'reg_alpha': 0.0022788046913440746, 'scale_pos_weight': 6, 'subsample': 0.9, 'eval_metric': 'auc', 'objective': 'binary:logistic', 'num_boost_round': 71}
+INFO:root:param=={'colsample_bytree': 0.3173616882941521, 'gamma': 0.05446584591715284, 'learning_rate': 0.08816411599599212, 'max_depth': 1, 'min_child_weight': 1, 'n_estimators': 27, 'reg_alpha': 0.0022788046913440746, 'scale_pos_weight': 6, 'subsample': 0.9, 'eval_metric': 'auc', 'objective': 'binary:logistic', 'num_boost_round': 71}
+INFO:root:param=={'colsample_bytree': 0.3173616882941521, 'gamma': 0.05446584591715284, 'learning_rate': 0.08816411599599212, 'max_depth': 1, 'min_child_weight': 1, 'n_estimators': 27, 'reg_alpha': 0.0022788046913440746, 'scale_pos_weight': 6, 'subsample': 0.9, 'eval_metric': 'auc', 'objective': 'binary:logistic', 'num_boost_round': 71}
+INFO:root:param=={'colsample_bytree': 0.3173616882941521, 'gamma': 0.05446584591715284, 'learning_rate': 0.08816411599599212, 'max_depth': 1, 'min_child_weight': 1, 'n_estimators': 27, 'reg_alpha': 0.0022788046913440746, 'scale_pos_weight': 6, 'subsample': 0.9, 'eval_metric': 'auc', 'objective': 'binary:logistic', 'num_boost_round': 71}
+INFO:root:param=={'colsample_bytree': 0.3173616882941521, 'gamma': 0.05446584591715284, 'learning_rate': 0.08816411599599212, 'max_depth': 1, 'min_child_weight': 1, 'n_estimators': 27, 'reg_alpha': 0.0022788046913440746, 'scale_pos_weight': 6, 'subsample': 0.9, 'eval_metric': 'auc', 'objective': 'binary:logistic', 'num_boost_round': 71}
+INFO:root:
+        XGB 模型建模输出：
+        1. 模型文件，预测概率等存储于： /Users/ying.xie/Documents/repositories/sublime_projects/ge/01_data/demo_xgb_v2XGBHyperopt模型结果.pkl
+        2. 模型变量重要性排序存储于：/Users/ying.xie/Documents/repositories/sublime_projects/ge/02_result/demo_xgb_v2XGBHyperopt模型变量重要性排序.xlsx
+        
+INFO:root:xgb_cv start
+INFO:root:XGB建模经排序选择变量更新于/Users/ying.xie/Documents/repositories/sublime_projects/ge/02_result/variable_filter.json
+INFO:root:XGB建模排序选择排序存储于/Users/ying.xie/Documents/repositories/sublime_projects/ge/02_result/xgb_select_rank.xlsx
+INFO:root:xgb_cv start
+INFO:root:经验参数存储于/Users/ying.xie/Documents/repositories/sublime_projects/ge/01_data/xgboost_params_experience.json
+INFO:root:开始Hyperopt超参调参
+INFO:hyperopt.tpe:tpe_transform took 0.001720 seconds
+INFO:hyperopt.tpe:TPE using 0 trials
+INFO:hyperopt.fmin:job exception: 'subsample'
+INFO:root:xgb_cv start
+INFO:root:XGB建模经排序选择变量更新于/Users/ying.xie/Documents/repositories/sublime_projects/ge/02_result/variable_filter.json
+INFO:root:XGB建模排序选择排序存储于/Users/ying.xie/Documents/repositories/sublime_projects/ge/02_result/xgb_select_rank.xlsx
+INFO:root:xgb_cv start
+INFO:root:经验参数存储于/Users/ying.xie/Documents/repositories/sublime_projects/ge/01_data/xgboost_params_experience.json
+INFO:root:开始Hyperopt超参调参
+INFO:hyperopt.tpe:tpe_transform took 0.001306 seconds
+INFO:hyperopt.tpe:TPE using 0 trials
+INFO:hyperopt.tpe:tpe_transform took 0.000963 seconds
+INFO:hyperopt.tpe:TPE using 1/1 trials with best loss -0.734712
+INFO:hyperopt.tpe:tpe_transform took 0.000896 seconds
+INFO:hyperopt.tpe:TPE using 2/2 trials with best loss -0.734712
+INFO:hyperopt.tpe:tpe_transform took 0.000848 seconds
+INFO:hyperopt.tpe:TPE using 3/3 trials with best loss -0.737308
+INFO:hyperopt.tpe:tpe_transform took 0.000853 seconds
+INFO:hyperopt.tpe:TPE using 4/4 trials with best loss -0.737308
+INFO:hyperopt.tpe:tpe_transform took 0.000847 seconds
+INFO:hyperopt.tpe:TPE using 5/5 trials with best loss -0.737308
+INFO:hyperopt.tpe:tpe_transform took 0.001085 seconds
+INFO:hyperopt.tpe:TPE using 6/6 trials with best loss -0.749231
+INFO:hyperopt.tpe:tpe_transform took 0.000845 seconds
+INFO:hyperopt.tpe:TPE using 7/7 trials with best loss -0.749231
+INFO:hyperopt.tpe:tpe_transform took 0.000849 seconds
+INFO:hyperopt.tpe:TPE using 8/8 trials with best loss -0.751058
+INFO:hyperopt.tpe:tpe_transform took 0.000845 seconds
+INFO:hyperopt.tpe:TPE using 9/9 trials with best loss -0.751058
+INFO:hyperopt.tpe:tpe_transform took 0.000898 seconds
+INFO:hyperopt.tpe:TPE using 10/10 trials with best loss -0.751058
+INFO:hyperopt.tpe:tpe_transform took 0.000880 seconds
+INFO:hyperopt.tpe:TPE using 11/11 trials with best loss -0.751058
+INFO:hyperopt.tpe:tpe_transform took 0.000840 seconds
+INFO:hyperopt.tpe:TPE using 12/12 trials with best loss -0.753750
+INFO:hyperopt.tpe:tpe_transform took 0.000846 seconds
+INFO:hyperopt.tpe:TPE using 13/13 trials with best loss -0.753750
+INFO:hyperopt.tpe:tpe_transform took 0.000841 seconds
+INFO:hyperopt.tpe:TPE using 14/14 trials with best loss -0.753750
+INFO:hyperopt.tpe:tpe_transform took 0.000854 seconds
+INFO:hyperopt.tpe:TPE using 15/15 trials with best loss -0.754423
+INFO:hyperopt.tpe:tpe_transform took 0.000842 seconds
+INFO:hyperopt.tpe:TPE using 16/16 trials with best loss -0.754423
+INFO:hyperopt.tpe:tpe_transform took 0.000853 seconds
+INFO:hyperopt.tpe:TPE using 17/17 trials with best loss -0.754423
+INFO:hyperopt.tpe:tpe_transform took 0.000839 seconds
+INFO:hyperopt.tpe:TPE using 18/18 trials with best loss -0.754423
+INFO:hyperopt.tpe:tpe_transform took 0.000859 seconds
+INFO:hyperopt.tpe:TPE using 19/19 trials with best loss -0.754423
+INFO:root:xgb_cv start
+INFO:root:Hyperopt调参完成！
+INFO:root:Hyperopt最优参数存储于/Users/ying.xie/Documents/repositories/sublime_projects/ge/01_data/xgboost_params_hyperopt.json
+INFO:root:XGBoost模型使用经验参数建模
+INFO:root:XGB模型在参数已调整好后，使用全部TRAIN&TEST数据集建模
+INFO:root:param=={'max_depth': 2, 'min_samples_leaf ': 200, 'eta': 0.1, 'objective': 'binary:logistic', 'subsample': 0.8, 'colsample_bytree': 0.8, 'gamma': 0, 'silent': 0, 'eval_metric': 'auc', 'num_boost_round': 80}
+INFO:root:param=={'max_depth': 2, 'min_samples_leaf ': 200, 'eta': 0.1, 'objective': 'binary:logistic', 'subsample': 0.8, 'colsample_bytree': 0.8, 'gamma': 0, 'silent': 0, 'eval_metric': 'auc', 'num_boost_round': 80}
+INFO:root:param=={'max_depth': 2, 'min_samples_leaf ': 200, 'eta': 0.1, 'objective': 'binary:logistic', 'subsample': 0.8, 'colsample_bytree': 0.8, 'gamma': 0, 'silent': 0, 'eval_metric': 'auc', 'num_boost_round': 80}
+INFO:root:param=={'max_depth': 2, 'min_samples_leaf ': 200, 'eta': 0.1, 'objective': 'binary:logistic', 'subsample': 0.8, 'colsample_bytree': 0.8, 'gamma': 0, 'silent': 0, 'eval_metric': 'auc', 'num_boost_round': 80}
+INFO:root:param=={'max_depth': 2, 'min_samples_leaf ': 200, 'eta': 0.1, 'objective': 'binary:logistic', 'subsample': 0.8, 'colsample_bytree': 0.8, 'gamma': 0, 'silent': 0, 'eval_metric': 'auc', 'num_boost_round': 80}
+INFO:root:param=={'max_depth': 2, 'min_samples_leaf ': 200, 'eta': 0.1, 'objective': 'binary:logistic', 'subsample': 0.8, 'colsample_bytree': 0.8, 'gamma': 0, 'silent': 0, 'eval_metric': 'auc', 'num_boost_round': 80}
+INFO:root:
+        XGB 模型建模输出：
+        1. 模型文件，预测概率等存储于： /Users/ying.xie/Documents/repositories/sublime_projects/ge/01_data/demo_xgb_v2XGBExp模型结果.pkl
+        2. 模型变量重要性排序存储于：/Users/ying.xie/Documents/repositories/sublime_projects/ge/02_result/demo_xgb_v2XGBExp模型变量重要性排序.xlsx
+        
+INFO:root:XGBoost模型使用Hyperopt调参所选最优参数建模
+INFO:root:XGB模型在参数已调整好后，使用全部TRAIN&TEST数据集建模
+INFO:root:param=={'max_depth': 5, 'n_estimators': 7, 'scale_pos_weight': 3.4494391604952623, 'eval_metric': 'auc', 'objective': 'binary:logistic', 'num_boost_round': 79}
+INFO:root:param=={'max_depth': 5, 'n_estimators': 7, 'scale_pos_weight': 3.4494391604952623, 'eval_metric': 'auc', 'objective': 'binary:logistic', 'num_boost_round': 79}
+INFO:root:param=={'max_depth': 5, 'n_estimators': 7, 'scale_pos_weight': 3.4494391604952623, 'eval_metric': 'auc', 'objective': 'binary:logistic', 'num_boost_round': 79}
+INFO:root:param=={'max_depth': 5, 'n_estimators': 7, 'scale_pos_weight': 3.4494391604952623, 'eval_metric': 'auc', 'objective': 'binary:logistic', 'num_boost_round': 79}
+INFO:root:param=={'max_depth': 5, 'n_estimators': 7, 'scale_pos_weight': 3.4494391604952623, 'eval_metric': 'auc', 'objective': 'binary:logistic', 'num_boost_round': 79}
+INFO:root:param=={'max_depth': 5, 'n_estimators': 7, 'scale_pos_weight': 3.4494391604952623, 'eval_metric': 'auc', 'objective': 'binary:logistic', 'num_boost_round': 79}
+INFO:root:
+        XGB 模型建模输出：
+        1. 模型文件，预测概率等存储于： /Users/ying.xie/Documents/repositories/sublime_projects/ge/01_data/demo_xgb_v2XGBHyperopt模型结果.pkl
+        2. 模型变量重要性排序存储于：/Users/ying.xie/Documents/repositories/sublime_projects/ge/02_result/demo_xgb_v2XGBHyperopt模型变量重要性排序.xlsx
+        
+INFO:root:xgb_cv start
+INFO:root:XGB建模经排序选择变量更新于/Users/ying.xie/Documents/repositories/sublime_projects/ge/02_result/variable_filter.json
+INFO:root:XGB建模排序选择排序存储于/Users/ying.xie/Documents/repositories/sublime_projects/ge/02_result/xgb_select_rank.xlsx
+INFO:root:xgb_cv start
+INFO:root:经验参数存储于/Users/ying.xie/Documents/repositories/sublime_projects/ge/01_data/xgboost_params_experience.json
+INFO:root:开始Hyperopt超参调参
+INFO:hyperopt.tpe:tpe_transform took 0.000707 seconds
+INFO:hyperopt.tpe:TPE using 0 trials
+INFO:hyperopt.tpe:tpe_transform took 0.000647 seconds
+INFO:hyperopt.tpe:TPE using 1/1 trials with best loss -0.766058
+INFO:hyperopt.tpe:tpe_transform took 0.000647 seconds
+INFO:hyperopt.tpe:TPE using 2/2 trials with best loss -0.766058
+INFO:hyperopt.tpe:tpe_transform took 0.000643 seconds
+INFO:hyperopt.tpe:TPE using 3/3 trials with best loss -0.766058
+INFO:hyperopt.tpe:tpe_transform took 0.000646 seconds
+INFO:hyperopt.tpe:TPE using 4/4 trials with best loss -0.766058
+INFO:hyperopt.tpe:tpe_transform took 0.000648 seconds
+INFO:hyperopt.tpe:TPE using 5/5 trials with best loss -0.766058
+INFO:hyperopt.tpe:tpe_transform took 0.000641 seconds
+INFO:hyperopt.tpe:TPE using 6/6 trials with best loss -0.766058
+INFO:hyperopt.tpe:tpe_transform took 0.000756 seconds
+INFO:hyperopt.tpe:TPE using 7/7 trials with best loss -0.766058
+INFO:hyperopt.tpe:tpe_transform took 0.000646 seconds
+INFO:hyperopt.tpe:TPE using 8/8 trials with best loss -0.766058
+INFO:hyperopt.tpe:tpe_transform took 0.000780 seconds
+INFO:hyperopt.tpe:TPE using 9/9 trials with best loss -0.766058
+INFO:hyperopt.tpe:tpe_transform took 0.000709 seconds
+INFO:hyperopt.tpe:TPE using 10/10 trials with best loss -0.766058
+INFO:hyperopt.tpe:tpe_transform took 0.000643 seconds
+INFO:hyperopt.tpe:TPE using 11/11 trials with best loss -0.766058
+INFO:hyperopt.tpe:tpe_transform took 0.000648 seconds
+INFO:hyperopt.tpe:TPE using 12/12 trials with best loss -0.766058
+INFO:hyperopt.tpe:tpe_transform took 0.000661 seconds
+INFO:hyperopt.tpe:TPE using 13/13 trials with best loss -0.766058
+INFO:hyperopt.tpe:tpe_transform took 0.001276 seconds
+INFO:hyperopt.tpe:TPE using 14/14 trials with best loss -0.766058
+INFO:hyperopt.tpe:tpe_transform took 0.000647 seconds
+INFO:hyperopt.tpe:TPE using 15/15 trials with best loss -0.766058
+INFO:hyperopt.tpe:tpe_transform took 0.000734 seconds
+INFO:hyperopt.tpe:TPE using 16/16 trials with best loss -0.766058
+INFO:hyperopt.tpe:tpe_transform took 0.000649 seconds
+INFO:hyperopt.tpe:TPE using 17/17 trials with best loss -0.766058
+INFO:hyperopt.tpe:tpe_transform took 0.000747 seconds
+INFO:hyperopt.tpe:TPE using 18/18 trials with best loss -0.766058
+INFO:hyperopt.tpe:tpe_transform took 0.000641 seconds
+INFO:hyperopt.tpe:TPE using 19/19 trials with best loss -0.766058
+INFO:root:xgb_cv start
+INFO:root:Hyperopt调参完成！
+INFO:root:Hyperopt最优参数存储于/Users/ying.xie/Documents/repositories/sublime_projects/ge/01_data/xgboost_params_hyperopt.json
+INFO:root:XGBoost模型使用经验参数建模
+INFO:root:XGB模型在参数已调整好后，使用全部TRAIN&TEST数据集建模
+INFO:root:param=={'max_depth': 2, 'min_samples_leaf ': 200, 'eta': 0.1, 'objective': 'binary:logistic', 'subsample': 0.8, 'colsample_bytree': 0.8, 'gamma': 0, 'silent': 0, 'eval_metric': 'auc', 'num_boost_round': 70}
+INFO:root:param=={'max_depth': 2, 'min_samples_leaf ': 200, 'eta': 0.1, 'objective': 'binary:logistic', 'subsample': 0.8, 'colsample_bytree': 0.8, 'gamma': 0, 'silent': 0, 'eval_metric': 'auc', 'num_boost_round': 70}
+INFO:root:param=={'max_depth': 2, 'min_samples_leaf ': 200, 'eta': 0.1, 'objective': 'binary:logistic', 'subsample': 0.8, 'colsample_bytree': 0.8, 'gamma': 0, 'silent': 0, 'eval_metric': 'auc', 'num_boost_round': 70}
+INFO:root:param=={'max_depth': 2, 'min_samples_leaf ': 200, 'eta': 0.1, 'objective': 'binary:logistic', 'subsample': 0.8, 'colsample_bytree': 0.8, 'gamma': 0, 'silent': 0, 'eval_metric': 'auc', 'num_boost_round': 70}
+INFO:root:param=={'max_depth': 2, 'min_samples_leaf ': 200, 'eta': 0.1, 'objective': 'binary:logistic', 'subsample': 0.8, 'colsample_bytree': 0.8, 'gamma': 0, 'silent': 0, 'eval_metric': 'auc', 'num_boost_round': 70}
+INFO:root:param=={'max_depth': 2, 'min_samples_leaf ': 200, 'eta': 0.1, 'objective': 'binary:logistic', 'subsample': 0.8, 'colsample_bytree': 0.8, 'gamma': 0, 'silent': 0, 'eval_metric': 'auc', 'num_boost_round': 70}
+INFO:root:
+        XGB 模型建模输出：
+        1. 模型文件，预测概率等存储于： /Users/ying.xie/Documents/repositories/sublime_projects/ge/01_data/demo_xgb_v2XGBExp模型结果.pkl
+        2. 模型变量重要性排序存储于：/Users/ying.xie/Documents/repositories/sublime_projects/ge/02_result/demo_xgb_v2XGBExp模型变量重要性排序.xlsx
+        
+INFO:root:XGBoost模型使用Hyperopt调参所选最优参数建模
+INFO:root:XGB模型在参数已调整好后，使用全部TRAIN&TEST数据集建模
+INFO:root:param=={'max_depth': 1, 'n_estimators': 21, 'eval_metric': 'auc', 'objective': 'binary:logistic', 'num_boost_round': 51}
+INFO:root:param=={'max_depth': 1, 'n_estimators': 21, 'eval_metric': 'auc', 'objective': 'binary:logistic', 'num_boost_round': 51}
+INFO:root:param=={'max_depth': 1, 'n_estimators': 21, 'eval_metric': 'auc', 'objective': 'binary:logistic', 'num_boost_round': 51}
+INFO:root:param=={'max_depth': 1, 'n_estimators': 21, 'eval_metric': 'auc', 'objective': 'binary:logistic', 'num_boost_round': 51}
+INFO:root:param=={'max_depth': 1, 'n_estimators': 21, 'eval_metric': 'auc', 'objective': 'binary:logistic', 'num_boost_round': 51}
+INFO:root:param=={'max_depth': 1, 'n_estimators': 21, 'eval_metric': 'auc', 'objective': 'binary:logistic', 'num_boost_round': 51}
+INFO:root:
+        XGB 模型建模输出：
+        1. 模型文件，预测概率等存储于： /Users/ying.xie/Documents/repositories/sublime_projects/ge/01_data/demo_xgb_v2XGBHyperopt模型结果.pkl
+        2. 模型变量重要性排序存储于：/Users/ying.xie/Documents/repositories/sublime_projects/ge/02_result/demo_xgb_v2XGBHyperopt模型变量重要性排序.xlsx
+        
+INFO:root:xgb_cv start
+INFO:root:XGB建模经排序选择变量更新于/Users/ying.xie/Documents/repositories/sublime_projects/ge/02_result/variable_filter.json
+INFO:root:XGB建模排序选择排序存储于/Users/ying.xie/Documents/repositories/sublime_projects/ge/02_result/xgb_select_rank.xlsx
+INFO:root:xgb_cv start
+INFO:root:经验参数存储于/Users/ying.xie/Documents/repositories/sublime_projects/ge/01_data/xgboost_params_experience.json
+INFO:root:开始Hyperopt超参调参
+INFO:hyperopt.tpe:tpe_transform took 0.001062 seconds
+INFO:hyperopt.tpe:TPE using 0 trials
+INFO:hyperopt.fmin:job exception: b'[16:15:10] src/gbm/gblinear.cc:108: Check failed: ntree_limit == 0U (300 vs. 0) GBLinear::Predict ntrees is only valid for gbtree predictor\n\nStack trace returned 8 entries:\n[bt] (0) 0   libxgboost.dylib                    0x000000011768340e dmlc::StackTrace() + 254\n[bt] (1) 1   libxgboost.dylib                    0x00000001176831bf dmlc::LogMessageFatal::~LogMessageFatal() + 47\n[bt] (2) 2   libxgboost.dylib                    0x00000001176d0a96 xgboost::gbm::GBLinear::PredictBatch(xgboost::DMatrix*, xgboost::HostDeviceVector<float>*, unsigned int) + 390\n[bt] (3) 3   libxgboost.dylib                    0x0000000117689004 xgboost::LearnerImpl::PredictRaw(xgboost::DMatrix*, xgboost::HostDeviceVector<float>*, unsigned int) const + 180\n[bt] (4) 4   libxgboost.dylib                    0x0000000117680525 xgboost::LearnerImpl::Predict(xgboost::DMatrix*, bool, xgboost::HostDeviceVector<float>*, unsigned int, bool, bool, bool, bool) const + 229\n[bt] (5) 5   libxgboost.dylib                    0x000000011769c9cd XGBoosterPredict + 301\n[bt] (6) 6   libffi.6.dylib                      0x00000001033a9884 ffi_call_unix64 + 76\n[bt] (7) 7   ???                                 0x00007ffeef0079d0 0x0 + 140732908206544\n\n'
+INFO:root:xgb_cv start
+INFO:root:XGB建模经排序选择变量更新于/Users/ying.xie/Documents/repositories/sublime_projects/ge/02_result/variable_filter.json
+INFO:root:XGB建模排序选择排序存储于/Users/ying.xie/Documents/repositories/sublime_projects/ge/02_result/xgb_select_rank.xlsx
+INFO:root:xgb_cv start
+INFO:root:经验参数存储于/Users/ying.xie/Documents/repositories/sublime_projects/ge/01_data/xgboost_params_experience.json
+INFO:root:开始Hyperopt超参调参
+INFO:hyperopt.tpe:tpe_transform took 0.001210 seconds
+INFO:hyperopt.tpe:TPE using 0 trials
+INFO:hyperopt.tpe:tpe_transform took 0.000816 seconds
+INFO:hyperopt.tpe:TPE using 1/1 trials with best loss -0.750000
+INFO:hyperopt.tpe:tpe_transform took 0.001527 seconds
+INFO:hyperopt.tpe:TPE using 2/2 trials with best loss -0.750000
+INFO:hyperopt.tpe:tpe_transform took 0.000831 seconds
+INFO:hyperopt.tpe:TPE using 3/3 trials with best loss -0.750000
+INFO:hyperopt.tpe:tpe_transform took 0.000816 seconds
+INFO:hyperopt.tpe:TPE using 4/4 trials with best loss -0.754135
+INFO:hyperopt.tpe:tpe_transform took 0.000926 seconds
+INFO:hyperopt.tpe:TPE using 5/5 trials with best loss -0.776058
+INFO:hyperopt.tpe:tpe_transform took 0.000866 seconds
+INFO:hyperopt.tpe:TPE using 6/6 trials with best loss -0.776058
+INFO:hyperopt.tpe:tpe_transform took 0.000829 seconds
+INFO:hyperopt.tpe:TPE using 7/7 trials with best loss -0.776058
+INFO:hyperopt.tpe:tpe_transform took 0.000831 seconds
+INFO:hyperopt.tpe:TPE using 8/8 trials with best loss -0.776058
+INFO:hyperopt.tpe:tpe_transform took 0.000814 seconds
+INFO:hyperopt.tpe:TPE using 9/9 trials with best loss -0.779519
+INFO:hyperopt.tpe:tpe_transform took 0.001056 seconds
+INFO:hyperopt.tpe:TPE using 10/10 trials with best loss -0.779519
+INFO:hyperopt.tpe:tpe_transform took 0.000824 seconds
+INFO:hyperopt.tpe:TPE using 11/11 trials with best loss -0.779519
+INFO:hyperopt.tpe:tpe_transform took 0.000828 seconds
+INFO:hyperopt.tpe:TPE using 12/12 trials with best loss -0.779519
+INFO:hyperopt.tpe:tpe_transform took 0.000996 seconds
+INFO:hyperopt.tpe:TPE using 13/13 trials with best loss -0.779519
+INFO:hyperopt.tpe:tpe_transform took 0.000947 seconds
+INFO:hyperopt.tpe:TPE using 14/14 trials with best loss -0.779519
+INFO:hyperopt.tpe:tpe_transform took 0.000906 seconds
+INFO:hyperopt.tpe:TPE using 15/15 trials with best loss -0.779519
+INFO:hyperopt.tpe:tpe_transform took 0.000813 seconds
+INFO:hyperopt.tpe:TPE using 16/16 trials with best loss -0.779519
+INFO:hyperopt.tpe:tpe_transform took 0.000810 seconds
+INFO:hyperopt.tpe:TPE using 17/17 trials with best loss -0.779519
+INFO:hyperopt.tpe:tpe_transform took 0.000826 seconds
+INFO:hyperopt.tpe:TPE using 18/18 trials with best loss -0.779519
+INFO:hyperopt.tpe:tpe_transform took 0.001447 seconds
+INFO:hyperopt.tpe:TPE using 19/19 trials with best loss -0.779519
+INFO:root:xgb_cv start
+INFO:root:Hyperopt调参完成！
+INFO:root:Hyperopt最优参数存储于/Users/ying.xie/Documents/repositories/sublime_projects/ge/01_data/xgboost_params_hyperopt.json
+INFO:root:XGBoost模型使用经验参数建模
+INFO:root:XGB模型在参数已调整好后，使用全部TRAIN&TEST数据集建模
+INFO:root:param=={'max_depth': 2, 'min_samples_leaf ': 200, 'eta': 0.1, 'objective': 'binary:logistic', 'subsample': 0.8, 'colsample_bytree': 0.8, 'gamma': 0, 'silent': 0, 'eval_metric': 'auc', 'num_boost_round': 80}
+INFO:root:param=={'max_depth': 2, 'min_samples_leaf ': 200, 'eta': 0.1, 'objective': 'binary:logistic', 'subsample': 0.8, 'colsample_bytree': 0.8, 'gamma': 0, 'silent': 0, 'eval_metric': 'auc', 'num_boost_round': 80}
+INFO:root:param=={'max_depth': 2, 'min_samples_leaf ': 200, 'eta': 0.1, 'objective': 'binary:logistic', 'subsample': 0.8, 'colsample_bytree': 0.8, 'gamma': 0, 'silent': 0, 'eval_metric': 'auc', 'num_boost_round': 80}
+INFO:root:param=={'max_depth': 2, 'min_samples_leaf ': 200, 'eta': 0.1, 'objective': 'binary:logistic', 'subsample': 0.8, 'colsample_bytree': 0.8, 'gamma': 0, 'silent': 0, 'eval_metric': 'auc', 'num_boost_round': 80}
+INFO:root:param=={'max_depth': 2, 'min_samples_leaf ': 200, 'eta': 0.1, 'objective': 'binary:logistic', 'subsample': 0.8, 'colsample_bytree': 0.8, 'gamma': 0, 'silent': 0, 'eval_metric': 'auc', 'num_boost_round': 80}
+INFO:root:param=={'max_depth': 2, 'min_samples_leaf ': 200, 'eta': 0.1, 'objective': 'binary:logistic', 'subsample': 0.8, 'colsample_bytree': 0.8, 'gamma': 0, 'silent': 0, 'eval_metric': 'auc', 'num_boost_round': 80}
+INFO:root:
+        XGB 模型建模输出：
+        1. 模型文件，预测概率等存储于： /Users/ying.xie/Documents/repositories/sublime_projects/ge/01_data/demo_xgb_v2XGBExp模型结果.pkl
+        2. 模型变量重要性排序存储于：/Users/ying.xie/Documents/repositories/sublime_projects/ge/02_result/demo_xgb_v2XGBExp模型变量重要性排序.xlsx
+        
+INFO:root:XGBoost模型使用Hyperopt调参所选最优参数建模
+INFO:root:XGB模型在参数已调整好后，使用全部TRAIN&TEST数据集建模
+INFO:root:param=={'max_depth': 5, 'n_estimators': 17, 'scale_pos_weight': 2, 'eval_metric': 'auc', 'objective': 'binary:logistic', 'num_boost_round': 2}
+INFO:root:param=={'max_depth': 5, 'n_estimators': 17, 'scale_pos_weight': 2, 'eval_metric': 'auc', 'objective': 'binary:logistic', 'num_boost_round': 2}
+INFO:root:param=={'max_depth': 5, 'n_estimators': 17, 'scale_pos_weight': 2, 'eval_metric': 'auc', 'objective': 'binary:logistic', 'num_boost_round': 2}
+INFO:root:param=={'max_depth': 5, 'n_estimators': 17, 'scale_pos_weight': 2, 'eval_metric': 'auc', 'objective': 'binary:logistic', 'num_boost_round': 2}
+INFO:root:param=={'max_depth': 5, 'n_estimators': 17, 'scale_pos_weight': 2, 'eval_metric': 'auc', 'objective': 'binary:logistic', 'num_boost_round': 2}
+INFO:root:param=={'max_depth': 5, 'n_estimators': 17, 'scale_pos_weight': 2, 'eval_metric': 'auc', 'objective': 'binary:logistic', 'num_boost_round': 2}
+INFO:root:
+        XGB 模型建模输出：
+        1. 模型文件，预测概率等存储于： /Users/ying.xie/Documents/repositories/sublime_projects/ge/01_data/demo_xgb_v2XGBHyperopt模型结果.pkl
+        2. 模型变量重要性排序存储于：/Users/ying.xie/Documents/repositories/sublime_projects/ge/02_result/demo_xgb_v2XGBHyperopt模型变量重要性排序.xlsx
+        
+INFO:root:xgb_cv start
+INFO:root:XGB建模经排序选择变量更新于/Users/ying.xie/Documents/repositories/sublime_projects/ge/02_result/variable_filter.json
+INFO:root:XGB建模排序选择排序存储于/Users/ying.xie/Documents/repositories/sublime_projects/ge/02_result/xgb_select_rank.xlsx
+INFO:root:xgb_cv start
+INFO:root:经验参数存储于/Users/ying.xie/Documents/repositories/sublime_projects/ge/01_data/xgboost_params_experience.json
+INFO:root:开始Hyperopt超参调参
+INFO:hyperopt.tpe:tpe_transform took 0.001695 seconds
+INFO:hyperopt.tpe:TPE using 0 trials
+INFO:hyperopt.tpe:tpe_transform took 0.000804 seconds
+INFO:hyperopt.tpe:TPE using 1/1 trials with best loss -0.724038
+INFO:hyperopt.tpe:tpe_transform took 0.000830 seconds
+INFO:hyperopt.tpe:TPE using 2/2 trials with best loss -0.724038
+INFO:hyperopt.tpe:tpe_transform took 0.000888 seconds
+INFO:hyperopt.tpe:TPE using 3/3 trials with best loss -0.769904
+INFO:hyperopt.tpe:tpe_transform took 0.000819 seconds
+INFO:hyperopt.tpe:TPE using 4/4 trials with best loss -0.769904
+INFO:hyperopt.tpe:tpe_transform took 0.000812 seconds
+INFO:hyperopt.tpe:TPE using 5/5 trials with best loss -0.769904
+INFO:hyperopt.tpe:tpe_transform took 0.000825 seconds
+INFO:hyperopt.tpe:TPE using 6/6 trials with best loss -0.769904
+INFO:hyperopt.tpe:tpe_transform took 0.000852 seconds
+INFO:hyperopt.tpe:TPE using 7/7 trials with best loss -0.769904
+INFO:hyperopt.tpe:tpe_transform took 0.000808 seconds
+INFO:hyperopt.tpe:TPE using 8/8 trials with best loss -0.769904
+INFO:hyperopt.tpe:tpe_transform took 0.000818 seconds
+INFO:hyperopt.tpe:TPE using 9/9 trials with best loss -0.769904
+INFO:hyperopt.tpe:tpe_transform took 0.000940 seconds
+INFO:hyperopt.tpe:TPE using 10/10 trials with best loss -0.769904
+INFO:hyperopt.tpe:tpe_transform took 0.000832 seconds
+INFO:hyperopt.tpe:TPE using 11/11 trials with best loss -0.769904
+INFO:hyperopt.tpe:tpe_transform took 0.000812 seconds
+INFO:hyperopt.tpe:TPE using 12/12 trials with best loss -0.769904
+INFO:hyperopt.tpe:tpe_transform took 0.000809 seconds
+INFO:hyperopt.tpe:TPE using 13/13 trials with best loss -0.769904
+INFO:hyperopt.tpe:tpe_transform took 0.000807 seconds
+INFO:hyperopt.tpe:TPE using 14/14 trials with best loss -0.774135
+INFO:hyperopt.tpe:tpe_transform took 0.000811 seconds
+INFO:hyperopt.tpe:TPE using 15/15 trials with best loss -0.774135
+INFO:hyperopt.tpe:tpe_transform took 0.000843 seconds
+INFO:hyperopt.tpe:TPE using 16/16 trials with best loss -0.774135
+INFO:hyperopt.tpe:tpe_transform took 0.001650 seconds
+INFO:hyperopt.tpe:TPE using 17/17 trials with best loss -0.774135
+INFO:hyperopt.tpe:tpe_transform took 0.000848 seconds
+INFO:hyperopt.tpe:TPE using 18/18 trials with best loss -0.774135
+INFO:hyperopt.tpe:tpe_transform took 0.000838 seconds
+INFO:hyperopt.tpe:TPE using 19/19 trials with best loss -0.774135
+INFO:root:xgb_cv start
+INFO:root:Hyperopt调参完成！
+INFO:root:Hyperopt最优参数存储于/Users/ying.xie/Documents/repositories/sublime_projects/ge/01_data/xgboost_params_hyperopt.json
+INFO:root:XGBoost模型使用经验参数建模
+INFO:root:XGB模型在参数已调整好后，使用全部TRAIN&TEST数据集建模
+INFO:root:param=={'max_depth': 2, 'min_samples_leaf ': 200, 'eta': 0.1, 'objective': 'binary:logistic', 'subsample': 0.8, 'colsample_bytree': 0.8, 'gamma': 0, 'silent': 0, 'eval_metric': 'auc', 'num_boost_round': 70}
+INFO:root:param=={'max_depth': 2, 'min_samples_leaf ': 200, 'eta': 0.1, 'objective': 'binary:logistic', 'subsample': 0.8, 'colsample_bytree': 0.8, 'gamma': 0, 'silent': 0, 'eval_metric': 'auc', 'num_boost_round': 70}
+INFO:root:param=={'max_depth': 2, 'min_samples_leaf ': 200, 'eta': 0.1, 'objective': 'binary:logistic', 'subsample': 0.8, 'colsample_bytree': 0.8, 'gamma': 0, 'silent': 0, 'eval_metric': 'auc', 'num_boost_round': 70}
+INFO:root:param=={'max_depth': 2, 'min_samples_leaf ': 200, 'eta': 0.1, 'objective': 'binary:logistic', 'subsample': 0.8, 'colsample_bytree': 0.8, 'gamma': 0, 'silent': 0, 'eval_metric': 'auc', 'num_boost_round': 70}
+INFO:root:param=={'max_depth': 2, 'min_samples_leaf ': 200, 'eta': 0.1, 'objective': 'binary:logistic', 'subsample': 0.8, 'colsample_bytree': 0.8, 'gamma': 0, 'silent': 0, 'eval_metric': 'auc', 'num_boost_round': 70}
+INFO:root:param=={'max_depth': 2, 'min_samples_leaf ': 200, 'eta': 0.1, 'objective': 'binary:logistic', 'subsample': 0.8, 'colsample_bytree': 0.8, 'gamma': 0, 'silent': 0, 'eval_metric': 'auc', 'num_boost_round': 70}
+INFO:root:
+        XGB 模型建模输出：
+        1. 模型文件，预测概率等存储于： /Users/ying.xie/Documents/repositories/sublime_projects/ge/01_data/demo_xgb_v2XGBExp模型结果.pkl
+        2. 模型变量重要性排序存储于：/Users/ying.xie/Documents/repositories/sublime_projects/ge/02_result/demo_xgb_v2XGBExp模型变量重要性排序.xlsx
+        
+INFO:root:XGBoost模型使用Hyperopt调参所选最优参数建模
+INFO:root:XGB模型在参数已调整好后，使用全部TRAIN&TEST数据集建模
+INFO:root:param=={'max_depth': 3, 'n_estimators': 5, 'scale_pos_weight': 3, 'eval_metric': 'auc', 'objective': 'binary:logistic', 'num_boost_round': 21}
+INFO:root:param=={'max_depth': 3, 'n_estimators': 5, 'scale_pos_weight': 3, 'eval_metric': 'auc', 'objective': 'binary:logistic', 'num_boost_round': 21}
+INFO:root:param=={'max_depth': 3, 'n_estimators': 5, 'scale_pos_weight': 3, 'eval_metric': 'auc', 'objective': 'binary:logistic', 'num_boost_round': 21}
+INFO:root:param=={'max_depth': 3, 'n_estimators': 5, 'scale_pos_weight': 3, 'eval_metric': 'auc', 'objective': 'binary:logistic', 'num_boost_round': 21}
+INFO:root:param=={'max_depth': 3, 'n_estimators': 5, 'scale_pos_weight': 3, 'eval_metric': 'auc', 'objective': 'binary:logistic', 'num_boost_round': 21}
+INFO:root:param=={'max_depth': 3, 'n_estimators': 5, 'scale_pos_weight': 3, 'eval_metric': 'auc', 'objective': 'binary:logistic', 'num_boost_round': 21}
+INFO:root:
+        XGB 模型建模输出：
+        1. 模型文件，预测概率等存储于： /Users/ying.xie/Documents/repositories/sublime_projects/ge/01_data/demo_xgb_v2XGBHyperopt模型结果.pkl
+        2. 模型变量重要性排序存储于：/Users/ying.xie/Documents/repositories/sublime_projects/ge/02_result/demo_xgb_v2XGBHyperopt模型变量重要性排序.xlsx
+        
+INFO:root:xgb_cv start
+INFO:root:XGB建模经排序选择变量更新于/Users/ying.xie/Documents/repositories/sublime_projects/ge/02_result/variable_filter.json
+INFO:root:XGB建模排序选择排序存储于/Users/ying.xie/Documents/repositories/sublime_projects/ge/02_result/xgb_select_rank.xlsx
+INFO:root:xgb_cv start
+INFO:root:经验参数存储于/Users/ying.xie/Documents/repositories/sublime_projects/ge/01_data/xgboost_params_experience.json
+INFO:root:开始Hyperopt超参调参
+INFO:hyperopt.tpe:tpe_transform took 0.002136 seconds
+INFO:hyperopt.tpe:TPE using 0 trials
+INFO:hyperopt.tpe:tpe_transform took 0.001062 seconds
+INFO:hyperopt.tpe:TPE using 1/1 trials with best loss -0.729904
+INFO:hyperopt.tpe:tpe_transform took 0.001003 seconds
+INFO:hyperopt.tpe:TPE using 2/2 trials with best loss -0.752788
+INFO:hyperopt.tpe:tpe_transform took 0.001046 seconds
+INFO:hyperopt.tpe:TPE using 3/3 trials with best loss -0.784712
+INFO:hyperopt.tpe:tpe_transform took 0.001092 seconds
+INFO:hyperopt.tpe:TPE using 4/4 trials with best loss -0.784712
+INFO:hyperopt.tpe:tpe_transform took 0.001030 seconds
+INFO:hyperopt.tpe:TPE using 5/5 trials with best loss -0.784712
+INFO:hyperopt.tpe:tpe_transform took 0.001138 seconds
+INFO:hyperopt.tpe:TPE using 6/6 trials with best loss -0.784712
+INFO:hyperopt.tpe:tpe_transform took 0.001000 seconds
+INFO:hyperopt.tpe:TPE using 7/7 trials with best loss -0.784712
+INFO:hyperopt.tpe:tpe_transform took 0.001005 seconds
+INFO:hyperopt.tpe:TPE using 8/8 trials with best loss -0.784712
+INFO:hyperopt.tpe:tpe_transform took 0.000999 seconds
+INFO:hyperopt.tpe:TPE using 9/9 trials with best loss -0.784712
+INFO:hyperopt.tpe:tpe_transform took 0.001022 seconds
+INFO:hyperopt.tpe:TPE using 10/10 trials with best loss -0.784712
+INFO:hyperopt.tpe:tpe_transform took 0.001737 seconds
+INFO:hyperopt.tpe:TPE using 11/11 trials with best loss -0.784712
+INFO:hyperopt.tpe:tpe_transform took 0.001490 seconds
+INFO:hyperopt.tpe:TPE using 12/12 trials with best loss -0.784712
+INFO:hyperopt.tpe:tpe_transform took 0.001003 seconds
+INFO:hyperopt.tpe:TPE using 13/13 trials with best loss -0.784712
+INFO:hyperopt.tpe:tpe_transform took 0.000999 seconds
+INFO:hyperopt.tpe:TPE using 14/14 trials with best loss -0.784712
+INFO:hyperopt.tpe:tpe_transform took 0.001003 seconds
+INFO:hyperopt.tpe:TPE using 15/15 trials with best loss -0.784712
+INFO:hyperopt.tpe:tpe_transform took 0.001065 seconds
+INFO:hyperopt.tpe:TPE using 16/16 trials with best loss -0.784712
+INFO:hyperopt.tpe:tpe_transform took 0.001106 seconds
+INFO:hyperopt.tpe:TPE using 17/17 trials with best loss -0.784712
+INFO:hyperopt.tpe:tpe_transform took 0.001979 seconds
+INFO:hyperopt.tpe:TPE using 18/18 trials with best loss -0.784712
+INFO:hyperopt.tpe:tpe_transform took 0.001090 seconds
+INFO:hyperopt.tpe:TPE using 19/19 trials with best loss -0.784712
+INFO:root:xgb_cv start
+INFO:root:XGB建模经排序选择变量更新于/Users/ying.xie/Documents/repositories/sublime_projects/ge/02_result/variable_filter.json
+INFO:root:XGB建模排序选择排序存储于/Users/ying.xie/Documents/repositories/sublime_projects/ge/02_result/xgb_select_rank.xlsx
+INFO:root:xgb_cv start
+INFO:root:经验参数存储于/Users/ying.xie/Documents/repositories/sublime_projects/ge/01_data/xgboost_params_experience.json
+INFO:root:开始Hyperopt超参调参
+INFO:hyperopt.tpe:tpe_transform took 0.003038 seconds
+INFO:hyperopt.tpe:TPE using 0 trials
+INFO:hyperopt.tpe:tpe_transform took 0.003671 seconds
+INFO:hyperopt.tpe:TPE using 1/1 trials with best loss -0.780865
+INFO:hyperopt.tpe:tpe_transform took 0.003097 seconds
+INFO:hyperopt.tpe:TPE using 2/2 trials with best loss -0.787452
+INFO:hyperopt.tpe:tpe_transform took 0.002732 seconds
+INFO:hyperopt.tpe:TPE using 3/3 trials with best loss -0.787452
+INFO:hyperopt.tpe:tpe_transform took 0.002705 seconds
+INFO:hyperopt.tpe:TPE using 4/4 trials with best loss -0.792404
+INFO:hyperopt.tpe:tpe_transform took 0.002676 seconds
+INFO:hyperopt.tpe:TPE using 5/5 trials with best loss -0.792404
+INFO:hyperopt.tpe:tpe_transform took 0.003055 seconds
+INFO:hyperopt.tpe:TPE using 6/6 trials with best loss -0.792404
+INFO:hyperopt.tpe:tpe_transform took 0.004663 seconds
+INFO:hyperopt.tpe:TPE using 7/7 trials with best loss -0.792404
+INFO:hyperopt.tpe:tpe_transform took 0.005303 seconds
+INFO:hyperopt.tpe:TPE using 8/8 trials with best loss -0.792404
+INFO:hyperopt.tpe:tpe_transform took 0.003051 seconds
+INFO:hyperopt.tpe:TPE using 9/9 trials with best loss -0.792404
+INFO:hyperopt.tpe:tpe_transform took 0.003362 seconds
+INFO:hyperopt.tpe:TPE using 10/10 trials with best loss -0.792404
+INFO:hyperopt.tpe:tpe_transform took 0.004247 seconds
+INFO:hyperopt.tpe:TPE using 11/11 trials with best loss -0.792404
+INFO:hyperopt.tpe:tpe_transform took 0.003557 seconds
+INFO:hyperopt.tpe:TPE using 12/12 trials with best loss -0.792404
+INFO:hyperopt.tpe:tpe_transform took 0.002731 seconds
+INFO:hyperopt.tpe:TPE using 13/13 trials with best loss -0.792404
+INFO:hyperopt.tpe:tpe_transform took 0.002892 seconds
+INFO:hyperopt.tpe:TPE using 14/14 trials with best loss -0.792404
+INFO:hyperopt.tpe:tpe_transform took 0.002808 seconds
+INFO:hyperopt.tpe:TPE using 15/15 trials with best loss -0.792404
+INFO:hyperopt.tpe:tpe_transform took 0.002897 seconds
+INFO:hyperopt.tpe:TPE using 16/16 trials with best loss -0.792404
+INFO:hyperopt.tpe:tpe_transform took 0.003068 seconds
+INFO:hyperopt.tpe:TPE using 17/17 trials with best loss -0.792404
+INFO:hyperopt.tpe:tpe_transform took 0.004763 seconds
+INFO:hyperopt.tpe:TPE using 18/18 trials with best loss -0.792404
+INFO:hyperopt.tpe:tpe_transform took 0.002802 seconds
+INFO:hyperopt.tpe:TPE using 19/19 trials with best loss -0.792404
+INFO:root:xgb_cv start
+INFO:root:Hyperopt调参完成！
+INFO:root:Hyperopt最优参数存储于/Users/ying.xie/Documents/repositories/sublime_projects/ge/01_data/xgboost_params_hyperopt.json
+INFO:root:XGBoost模型使用经验参数建模
+INFO:root:XGB模型在参数已调整好后，使用全部TRAIN&TEST数据集建模
+INFO:root:param=={'max_depth': 2, 'min_samples_leaf ': 200, 'eta': 0.1, 'objective': 'binary:logistic', 'subsample': 0.8, 'colsample_bytree': 0.8, 'gamma': 0, 'silent': 0, 'eval_metric': 'auc', 'num_boost_round': 80}
+INFO:root:param=={'max_depth': 2, 'min_samples_leaf ': 200, 'eta': 0.1, 'objective': 'binary:logistic', 'subsample': 0.8, 'colsample_bytree': 0.8, 'gamma': 0, 'silent': 0, 'eval_metric': 'auc', 'num_boost_round': 80}
+INFO:root:param=={'max_depth': 2, 'min_samples_leaf ': 200, 'eta': 0.1, 'objective': 'binary:logistic', 'subsample': 0.8, 'colsample_bytree': 0.8, 'gamma': 0, 'silent': 0, 'eval_metric': 'auc', 'num_boost_round': 80}
+INFO:root:param=={'max_depth': 2, 'min_samples_leaf ': 200, 'eta': 0.1, 'objective': 'binary:logistic', 'subsample': 0.8, 'colsample_bytree': 0.8, 'gamma': 0, 'silent': 0, 'eval_metric': 'auc', 'num_boost_round': 80}
+INFO:root:param=={'max_depth': 2, 'min_samples_leaf ': 200, 'eta': 0.1, 'objective': 'binary:logistic', 'subsample': 0.8, 'colsample_bytree': 0.8, 'gamma': 0, 'silent': 0, 'eval_metric': 'auc', 'num_boost_round': 80}
+INFO:root:param=={'max_depth': 2, 'min_samples_leaf ': 200, 'eta': 0.1, 'objective': 'binary:logistic', 'subsample': 0.8, 'colsample_bytree': 0.8, 'gamma': 0, 'silent': 0, 'eval_metric': 'auc', 'num_boost_round': 80}
+INFO:root:
+        XGB 模型建模输出：
+        1. 模型文件，预测概率等存储于： /Users/ying.xie/Documents/repositories/sublime_projects/ge/01_data/demo_xgb_v2XGBExp模型结果.pkl
+        2. 模型变量重要性排序存储于：/Users/ying.xie/Documents/repositories/sublime_projects/ge/02_result/demo_xgb_v2XGBExp模型变量重要性排序.xlsx
+        
+INFO:root:XGBoost模型使用Hyperopt调参所选最优参数建模
+INFO:root:XGB模型在参数已调整好后，使用全部TRAIN&TEST数据集建模
+INFO:root:param=={'colsample_bytree': 0.9684913030387016, 'gamma': 0.0043915628746967195, 'learning_rate': 0.012274942431846458, 'max_depth': 2, 'min_child_weight': 3, 'n_estimators': 6, 'reg_alpha': 0.4706612632700521, 'scale_pos_weight': 2, 'subsample': 0.9, 'eval_metric': 'auc', 'objective': 'binary:logistic', 'num_boost_round': 62}
+INFO:root:param=={'colsample_bytree': 0.9684913030387016, 'gamma': 0.0043915628746967195, 'learning_rate': 0.012274942431846458, 'max_depth': 2, 'min_child_weight': 3, 'n_estimators': 6, 'reg_alpha': 0.4706612632700521, 'scale_pos_weight': 2, 'subsample': 0.9, 'eval_metric': 'auc', 'objective': 'binary:logistic', 'num_boost_round': 62}
+INFO:root:param=={'colsample_bytree': 0.9684913030387016, 'gamma': 0.0043915628746967195, 'learning_rate': 0.012274942431846458, 'max_depth': 2, 'min_child_weight': 3, 'n_estimators': 6, 'reg_alpha': 0.4706612632700521, 'scale_pos_weight': 2, 'subsample': 0.9, 'eval_metric': 'auc', 'objective': 'binary:logistic', 'num_boost_round': 62}
+INFO:root:param=={'colsample_bytree': 0.9684913030387016, 'gamma': 0.0043915628746967195, 'learning_rate': 0.012274942431846458, 'max_depth': 2, 'min_child_weight': 3, 'n_estimators': 6, 'reg_alpha': 0.4706612632700521, 'scale_pos_weight': 2, 'subsample': 0.9, 'eval_metric': 'auc', 'objective': 'binary:logistic', 'num_boost_round': 62}
+INFO:root:param=={'colsample_bytree': 0.9684913030387016, 'gamma': 0.0043915628746967195, 'learning_rate': 0.012274942431846458, 'max_depth': 2, 'min_child_weight': 3, 'n_estimators': 6, 'reg_alpha': 0.4706612632700521, 'scale_pos_weight': 2, 'subsample': 0.9, 'eval_metric': 'auc', 'objective': 'binary:logistic', 'num_boost_round': 62}
+INFO:root:param=={'colsample_bytree': 0.9684913030387016, 'gamma': 0.0043915628746967195, 'learning_rate': 0.012274942431846458, 'max_depth': 2, 'min_child_weight': 3, 'n_estimators': 6, 'reg_alpha': 0.4706612632700521, 'scale_pos_weight': 2, 'subsample': 0.9, 'eval_metric': 'auc', 'objective': 'binary:logistic', 'num_boost_round': 62}
+INFO:root:
+        XGB 模型建模输出：
+        1. 模型文件，预测概率等存储于： /Users/ying.xie/Documents/repositories/sublime_projects/ge/01_data/demo_xgb_v2XGBHyperopt模型结果.pkl
+        2. 模型变量重要性排序存储于：/Users/ying.xie/Documents/repositories/sublime_projects/ge/02_result/demo_xgb_v2XGBHyperopt模型变量重要性排序.xlsx
+        

@@ -1,0 +1,121 @@
+{% extends "base1.html" %}
+
+{% block title %} <title>{{model_name}}</title> {% endblock %}
+
+{% block page_main %}
+<main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+  <h1 align=center>{{model_name}}</h1>
+  <hr>
+  <h3>监控须知</h3>
+  <div class="table-responsive">
+    <table class="table table-striped table-sm" width=200ppx style=" text-align:center;" >
+      <thead>
+        <tr>
+          <th> </th>
+          <th>Bench Mark</th>
+          <th>监控口径</th>
+          <th>上线时间</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>稳定性PSI</td>
+          <td>{{models_config[model_name]['psi_benchmark']}}</td>
+          <td>{{models_config[model_name]['psi口径']}}</td>
+          <td>{{models_config[model_name]['psi上线时间']}}</td>
+        </tr>
+        <tr>
+          <td>有效性KS</td>
+          <td>{{models_config[model_name]['ks_benchmark']}}</td>
+          <td>{{models_config[model_name]['ks口径']}}</td>
+          <td>{{models_config[model_name]['ks上线时间']}}</td>
+        </tr>
+      </tbody>
+    </table>
+    <hr>
+
+    <h3>监控汇总</h3>
+    <div class="table-responsive">
+        <table class="table table-striped table-sm" style=" text-align:center;" >
+          <thead>
+            <tr>
+              <th noWrap>监控日期</th>
+              <th noWrap>PSI样本量</th>
+              <th noWrap>PSI</th>
+              <th noWrap>KS样本量</th>
+              <th noWrap>KS</th>
+              <th >监控结论</th>
+              <th noWrap>监控级别</th>
+              <th noWrap>操作</th>
+            </tr>
+          </thead>
+          <tbody>
+          {% for i in summary_data %}
+              <tr>
+                <td noWrap>{{i[0]}}</td>
+                <td noWrap>{{i[1]}}</td>
+                {% if i[2]=='' %}
+                  <td>{{i[2]}}</td>
+                {% elif i[2] <= models_config[model_name]['psi_critical_point1'] %}
+                  <td style="background:#009900">{{i[2]}}</td>
+                {% elif i[2] > models_config[model_name]['psi_critical_point1'] and i[2] <= models_config[model_name]['psi_critical_point2'] %}
+                  <td style="background:#FFFF00">{{i[2]}}</td>
+                {% elif i[2] > models_config[model_name]['psi_critical_point2'] %}
+                  <td style="background:#B80000">{{i[2]}}</td>
+                {% else %}
+                  <td>{{i[2]}}</td>
+                {% endif %}
+                <td noWrap>{{i[3]}}</td>
+                {% if i[4]=='' %}
+                  <td>{{i[4]}}</td>
+                {% elif i[4] >= models_config[model_name]['ks_critical_point2'] and i[4] < models_config[model_name]['ks_critical_point1'] %}
+                  <td style="background:#FFFF00">{{i[4]}}</td>
+                {% elif i[4] < models_config[model_name]['ks_critical_point2'] %}
+                  <td style="background:#B80000">{{i[4]}}</td>
+                {% elif i[4] >= models_config[model_name]['ks_critical_point1'] %}
+                  <td style="background:#009900">{{i[4]}}</td>
+                {% else %}
+                  <td>{{i[4]}}</td>
+                {% endif %}
+                <td align=left>{{i[5]}}</td>
+                {% if i[6]=='green' %}
+                  <td align=center style="background:#009900">{{i[6]}}</td>
+                {% elif i[6]=='yellow' %}
+                  <td align=center style="background:#FFFF00">{{i[6]}}</td>
+                {% else %}
+                  <td align=center style="background:#B80000">{{i[6]}}</td>
+                {% endif %}
+
+                <td noWrap>
+                  <form class="form-horizontal" method="post">
+                    <!-- Button -->
+                    <div class="controls">
+                      <input type="text" style="width:0px;height:0px;visibility: hidden;" name="date"  id="demo">
+                      <button class="btn btn-success" type="submit" onclick="myFunction('{{i[0]}}')">删除</button>
+                    </div>
+                  </form>
+                </td>
+              </tr>
+           {% endfor %}
+          </tbody>
+        </table>
+      </div>
+  </div>
+</main>
+  {% block script_foot %}
+    <script>
+      feather.replace()
+      function myFunction(i){
+        var x;
+        var r=confirm("是否确认删除!");
+        if (r==true){
+          x=i;
+        }
+        else{
+          x=0;
+        }
+        document.getElementById("demo").value=x;
+      }
+    </script>
+  {% endblock %}
+{% endblock %}

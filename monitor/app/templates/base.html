@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../static/favicon.ico">
+    {% block title%}{% endblock%}
+    <!-- Bootstrap core CSS -->
+    <link href="../static/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/index/starter-template.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    {% block css_imports %}{% endblock %}
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <a class="navbar-brand" href="{{ url_for('index') }}">Monitor Summary</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="{{ url_for('index') }}">Home <span class="sr-only">(current)</span></a>
+          </li>
+          {% for model_catalog in model_dict.keys() %}
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="{{model_catalog}}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{model_catalog}}</a>
+              <div class="dropdown-menu" aria-labelledby="{{model_catalog}}">
+                {% for model_name in model_dict[model_catalog] %}
+                  <a class="dropdown-item" href="{{url_for('monitor_summary', model_name=model_name)}}">{{model_name}}</a>
+                {% endfor %}
+              </div>
+            </li>
+          {% endfor %}
+          </ul>
+          <ul class="nav pull-right" style="float:right">
+          {% if user %}
+            <li class="nav-item active" >
+              <a class="nav-link" href="#" style="color:#fff">{{user.username}}</a>
+            </li>
+            <li class="nav-item active" >
+              <a class="nav-link" href="{{url_for('logout')}}" style="color:#fff">退出登录</a>
+            </li>
+          {% else %}
+            <li class="nav-item active">
+              <a class="nav-link" href="{{url_for('logout')}}" style="color:#fff">退出登录</a>
+            </li>
+          {% endif %}
+        </ul>
+      </div>
+    </nav>
+    {% block page_content %}{% endblock %}
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../static/assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../static/assets/js/vendor/popper.min.js"></script>
+    <script src="../static/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

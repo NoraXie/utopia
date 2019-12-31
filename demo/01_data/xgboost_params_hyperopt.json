@@ -1,0 +1,1 @@
+"{'colsample_bytree': 0.9684913030387016, 'gamma': 0.0043915628746967195, 'learning_rate': 0.012274942431846458, 'max_depth': 2, 'min_child_weight': 3, 'n_estimators': 6, 'reg_alpha': 0.4706612632700521, 'scale_pos_weight': 2, 'subsample': 0.9, 'eval_metric': 'auc', 'objective': 'binary:logistic', 'num_boost_round': 62}"
