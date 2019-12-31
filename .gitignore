@@ -1,4 +1,5 @@
 */mysql.cfg
 *pycache
 *.DS_Store
+*.pyc
 
