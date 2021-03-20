@@ -1,6 +1,6 @@
 numpy==1.13.1
 pandas==0.20.3
-jinja2==2.9.6
+jinja2==2.11.3
 presto-python-client==0.1.0
 configparser==3.5.0
 scipy==0.19.1
